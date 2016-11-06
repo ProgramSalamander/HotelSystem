@@ -12,7 +12,7 @@ public class ClientBLService_driver {
 	public void drive(ClientBLService clientBLService){
 		
 		//测试client_checkInfo
-		ClientVO vo = clientBLService.client_checkInfo();
+		ClientVO vo = clientBLService.client_checkInfo(1);
 		System.out.println(vo.getname());
 		System.out.println(vo.getcontact());
 		System.out.println(vo.getcredit());
@@ -25,7 +25,8 @@ public class ClientBLService_driver {
 			System.out.println(vo.getcompany());
 
 		//测试client_updateInfo
-		ResultMessage resultMessage = clientBLService.client_updateInfo("input");
+		
+		ResultMessage resultMessage = clientBLService.client_updateInfo(vo);
 		if(resultMessage==ResultMessage.Success){
 			System.out.println("更新客户信息成功");
 		}
@@ -34,7 +35,7 @@ public class ClientBLService_driver {
 		}
 
 		//测试client_getpreviousHotelList
-		ArrayList<HotelVO> list = clientBLService.client_getpreviousHotelList();
+		ArrayList<HotelVO> list = clientBLService.client_getpreviousHotelList(1);
 		HotelVO vo2 = null;
 		if(list.isEmpty()){
 			System.out.println("客户未曾预定过酒店");
@@ -48,7 +49,7 @@ public class ClientBLService_driver {
 		}
 
 		//测试client_checkCredit
-		String credit_record = clientBLService.client_checkCredit();
+		int credit_record = clientBLService.client_checkCredit(1);
 		System.out.println(credit_record);
 
 		//测试client_setLocation
@@ -68,7 +69,7 @@ public class ClientBLService_driver {
 		}
 
 		//测试client_checkHotelInfo
-		vo2 = clientBLService.client_checkHotelInfo();
+		vo2 = clientBLService.client_checkHotelInfo(1);
 		System.out.println(vo2.getname());
 		System.out.println(vo2.getaddress());
 		System.out.println(vo2.getbussiness_address());
@@ -78,7 +79,8 @@ public class ClientBLService_driver {
 		//。。。
 
 		//测试client_evaluateHotel
-		resultMessage = clientBLService.client_evaluateHotel("evaluation");
+		Evaluation e=new Evaluation();
+		resultMessage = clientBLService.client_evaluateHotel(e,1);
 		if(resultMessage == ResultMessage.Success){
 			System.out.println("评价成功");
 		}
@@ -86,7 +88,8 @@ public class ClientBLService_driver {
 			System.out.println("评价失败");
 
 		//测试client_enrollVIP
-		resultMessage = clientBLService.client_enrollVIP("info");
+		VIPInfo vip=new VIPInfo();
+ 		resultMessage = clientBLService.client_enrollVIP(vip,1);
 		if(resultMessage == ResultMessage.Success)
 			System.out.println("注册会员成功");
 		else

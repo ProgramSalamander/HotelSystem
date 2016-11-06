@@ -1,12 +1,11 @@
 package driver;
 
 
-
-import VO.HotelVO;
-
-import businesslogicsevice.HotelBLService;
-
-import businesslogicsevice.ResultMessage;
+import java.util.ArrayList;
+import vo.*;
+import service.*;
+import service.blservice.*;
+import objects.*;
 
 
 
@@ -15,7 +14,7 @@ public class HotelBLService_driver {
 	public void drive(HotelBLService hotelBLService){
 
 		//测试hotel_checkInfo
-		HotelVO hotelVO = hotelBLService.hotel_checkInfo();
+		HotelVO hotelVO = hotelBLService.hotel_checkInfo(1);
 		System.out.println(hotelVO.getname());
 		System.out.println(hotelVO.getaddress());
 		System.out.println(hotelVO.getbussiness_address());
@@ -43,7 +42,8 @@ public class HotelBLService_driver {
 		
 
 		//测试hotel_importRoom
-		resultMessage = hotelBLService.hotel_importRoom("双人房");
+		Room room=new Room();
+		resultMessage = hotelBLService.hotel_importRoom(room);
 		if (resultMessage==ResultMessage.Success) {
 			System.out.println("录入可用房间成功");
 		}
@@ -54,7 +54,8 @@ public class HotelBLService_driver {
 		
 
 		//测试hotel_updateAccomdation
-		resultMessage = hotelBLService.hotel_updateAccomodation("一人入住房间001号");
+		AccommodationInfo ac=new AccommodationInfo();
+		resultMessage = hotelBLService.hotel_updateAccomodation(ac);
 		if (resultMessage == ResultMessage.Success) {
 			System.out.println("更新入住信息成功");
 		}

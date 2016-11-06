@@ -2,11 +2,11 @@ package driver;
 
 
 
-import VO.ClientVO;
-import VO.HotelWorkerVO;
-import VO.WebMarketVO;
-import businesslogicsevice.ManageBLService;
-import businesslogicsevice.ResultMessage;
+import java.util.ArrayList;
+import vo.*;
+import service.*;
+import service.blservice.*;
+import objects.*;
 
 
 
@@ -41,7 +41,7 @@ public class ManageBLService_driver {
 		
 
 		//测试manage_addHotel
-		resultMessage = manageBLService.manage_addHotel("格林豪泰");
+		resultMessage = manageBLService.manage_addHotel(1);
 		if(resultMessage==ResultMessage.Success)
 			System.out.println("添加酒店成功");
 		else
@@ -50,7 +50,7 @@ public class ManageBLService_driver {
 		
 
 		//测试manage_addHotelWorker
-		resultMessage = manageBLService.manage_addHotelWorker("格林豪泰", new HotelWorkerVO("lucy", "11111111111", "格林豪泰"));
+		resultMessage = manageBLService.manage_addHotelWorker(1, new HotelWorkerVO("lucy", "11111111111", "格林豪泰"));
 		if(resultMessage==ResultMessage.Success)
 			System.out.println("添加酒店工作人员成功");
 		else
@@ -59,7 +59,7 @@ public class ManageBLService_driver {
 		
 
 		//测试manage_searchHotelWorker
-		HotelWorkerVO hWorkerVO = manageBLService.manage_searchHotelWorker("如家");
+		HotelWorkerVO hWorkerVO = manageBLService.manage_searchHotelWorker(1);
 		System.out.println(hWorkerVO.gethotel());
 		System.out.println(hWorkerVO.getname());
 		System.out.println(hWorkerVO.getcontact());
@@ -67,7 +67,7 @@ public class ManageBLService_driver {
 		
 
 		//测试manage_updateHotelWorker
-		resultMessage = manageBLService.manage_updateHotelWorker("如家");
+		resultMessage = manageBLService.manage_updateHotelWorker(1);
 		if(resultMessage==ResultMessage.Success)
 			System.out.println("更新酒店工作人员信息成功");
 		else
@@ -92,7 +92,7 @@ public class ManageBLService_driver {
 		
 
 		//测试manage_updateMarketWorker
-		resultMessage = manageBLService.manage_web_updateMarketWorker(new WebMarketVO("tom", "11111111111"));
+		resultMessage = manageBLService.manage_updateMarketWorker(new WebMarketVO("tom", "11111111111"));
 		if(resultMessage==ResultMessage.Success)
 			System.out.println("更新网络营销人员信息成功");
 		else

@@ -1,8 +1,11 @@
 package logiccontroller;
 
-import VO.HotelVO;
-import businesslogicsevice.HotelBLService;
-import businesslogicsevice.ResultMessage;
+
+import java.util.ArrayList;
+import vo.*;
+import service.*;
+import service.blservice.*;
+import objects.*;
 
 public class HotelController implements HotelBLService{
 	//酒店信息参数
@@ -18,13 +21,6 @@ public class HotelController implements HotelBLService{
 		String hotel_order="无";
 		String hotel_evaluation="无";
 		
-		@Override
-		//酒店工作人员查看酒店信息
-		public HotelVO hotel_checkInfo() {
-			// TODO Auto-generated method stub
-			return new HotelVO(hotel_address,hotel_business_address,hotel_name,hotel_introduction,hotel_service,
-					hotel_room_state,hotel_room_type,hotel_room_number,hotel_room_price,hotel_order,hotel_evaluation);
-		}
 
 		@Override
 		//酒店工作人员更新酒店信息
@@ -35,21 +31,58 @@ public class HotelController implements HotelBLService{
 			else return ResultMessage.Fail;
 		}
 
+
 		@Override
-		//酒店工作人员录入可用客房
-		public ResultMessage hotel_importRoom(String Room) {
+		public HotelVO hotel_checkInfo(int hotelid) {
 			// TODO Auto-generated method stub
-			if(Room!=null)
-				return ResultMessage.Success;
-			else return ResultMessage.Fail;
+			return null;
 		}
 
 		@Override
-		//酒店工作人员更新入住信息
-		public ResultMessage hotel_updateAccomodation(String AccomodationInfo) {
+		public ResultMessage hotel_importRoom(Room room) {
 			// TODO Auto-generated method stub
-			if(AccomodationInfo!=null)
-				return ResultMessage.Success;
-			else return ResultMessage.Fail;
+			return null;
+		}
+
+		@Override
+		public ResultMessage hotel_updateAccomodation(AccommodationInfo info) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+		@Override
+		public Hotel searchHotel(int hotelid) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+		@Override
+		public ArrayList<Hotel> previousHotel(int clientid) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+		@Override
+		public ResultMessage addHotel(Hotel hotel) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+		@Override
+		public ResultMessage addHotelWorker(HotelWorker worker) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+		@Override
+		public HotelWorker searchHotelWorker(int hotelid) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+		@Override
+		public ResultMessage updateHotelWokerInfo(int hotelid, HotelWorker worker) {
+			// TODO Auto-generated method stub
+			return null;
 		}
 }

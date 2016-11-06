@@ -1,13 +1,15 @@
 package driver;
 
-import businesslogicsevice.ResultMessage;
-import businesslogicsevice.UserBLService;
+
+
+import service.blservice.*;
+import objects.*;
 
 public class UserBLService_driver {
 	public void drive(UserBLService userBLService){
 		
 		//µÇÂ¼
-		ResultMessage result_login=userBLService.login(1, "123456");
+		ResultMessage result_login=userBLService.login("hh", "123456");
 		if(result_login==ResultMessage.Success){
 			System.out.println("µÇÂ¼³É¹¦");
 		}

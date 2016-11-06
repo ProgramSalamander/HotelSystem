@@ -1,10 +1,11 @@
 package logiccontroller;
 
-import VO.ClientVO;
-import VO.HotelWorkerVO;
-import VO.WebMarketVO;
-import businesslogicsevice.ManageBLService;
-import businesslogicsevice.ResultMessage;
+
+import java.util.ArrayList;
+import vo.*;
+import service.*;
+import service.blservice.*;
+import objects.*;
 
 public class ManageController implements ManageBLService{
 	//用户的信息参数
@@ -43,40 +44,7 @@ public class ManageController implements ManageBLService{
 			else return ResultMessage.Fail;
 		}
 
-		@Override
-		//网站管理人员添加酒店
-		public ResultMessage manage_addHotel(String hotel_name) {
-			// TODO Auto-generated method stub
-			if(hotel_name=="如家")
-				return ResultMessage.Success;
-			else return ResultMessage.Fail;
-		}
-
-		@Override
-		//网站管理人员添加酒店工作人员
-		public ResultMessage manage_addHotelWorker(String hotel_name, HotelWorkerVO w) {
-			// TODO Auto-generated method stub
-			if(hotel_name==w.gethotel())
-				return ResultMessage.Success;
-			else return ResultMessage.Fail;
-		}
-
-		@Override
-		//网站管理人员搜索酒店工作人员
-		public HotelWorkerVO manage_searchHotelWorker(String hotel_name) {
-			// TODO Auto-generated method stub
-			return new HotelWorkerVO(hotelWorker_name,hotelWorker_contact,hotelWorker_hotel);
-		}
-
-		@Override
-		//网站管理人员更新酒店工作人员
-		public ResultMessage manage_updateHotelWorker(String hotel_name) {
-			// TODO Auto-generated method stub
-			if(hotel_name=="如家")
-				return ResultMessage.Success;
-			else return ResultMessage.Fail;
-		}
-
+		
 		@Override
 		//网站管理人员添加网站营销人员
 		public ResultMessage manage_addMarketWorker(WebMarketVO mw) {
@@ -93,12 +61,35 @@ public class ManageController implements ManageBLService{
 			return new WebMarketVO(MarketWorker_name,MarketWorker_contact);
 		}
 
+		
+
 		@Override
-		//网站管理人员更新网站营销人员信息
-		public ResultMessage manage_web_updateMarketWorker(WebMarketVO mw) {
+		public ResultMessage manage_addHotel(int hotelid) {
 			// TODO Auto-generated method stub
-			if(mw.getname()=="张三")
-				return ResultMessage.Success;
-			else return ResultMessage.Fail;
+			return null;
+		}
+
+		@Override
+		public ResultMessage manage_addHotelWorker(int hotelid, HotelWorkerVO w) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+		@Override
+		public HotelWorkerVO manage_searchHotelWorker(int hotelid) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+		@Override
+		public ResultMessage manage_updateHotelWorker(int hotelid) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+		@Override
+		public ResultMessage manage_updateMarketWorker(WebMarketVO mw) {
+			// TODO Auto-generated method stub
+			return null;
 		}
 }

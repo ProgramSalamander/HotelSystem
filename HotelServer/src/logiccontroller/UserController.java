@@ -1,16 +1,24 @@
 package logiccontroller;
 
-import businesslogicsevice.ResultMessage;
-import businesslogicsevice.UserBLService;
+import java.util.ArrayList;
+import vo.*;
+import service.*;
+import service.blservice.*;
+import objects.*;
 
 public class UserController implements UserBLService{
 
+
 	@Override
-	public ResultMessage login(int id, String password) {
+	public ResultMessage login(String username, String password) {
 		// TODO Auto-generated method stub
-		if(id==1&&password=="123456")
-			return ResultMessage.Success;
-		else return ResultMessage.Fail;			
+		return null;
+	}
+
+	@Override
+	public ResultMessage regist(String username, String password) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

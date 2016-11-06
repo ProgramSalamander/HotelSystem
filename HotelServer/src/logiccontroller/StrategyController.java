@@ -1,9 +1,10 @@
 package logiccontroller;
 
-import VO.HotelStrategyVO;
-import VO.WebStrategyVO;
-import businesslogicsevice.ResultMessage;
-import businesslogicsevice.StrategyBLService;
+import java.util.ArrayList;
+import vo.*;
+import service.*;
+import service.blservice.*;
+import objects.*;
 
 
 
@@ -51,5 +52,35 @@ import businesslogicsevice.StrategyBLService;
 			else{
 				return ResultMessage.Fail;
 			}
+	}
+	@Override
+	public ResultMessage hotelstrategy_make(HotelStrategy strategy) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public ResultMessage hotelstrategy_update(HotelStrategy strategy) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public ResultMessage webstrategy_make(WebStrategy strategy) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public ResultMessage webstrategy_update(WebStrategy strategy) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public ArrayList<HotelStrategy> getStrategy(int hotelid, int clientid) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public ArrayList<WebStrategy> getStrategy(int clientid) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }

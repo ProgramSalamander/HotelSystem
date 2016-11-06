@@ -3,14 +3,8 @@ package service;
 import vo.*;
 import java.util.ArrayList;
 
-<<<<<<< HEAD
-import Objects.*;
-import vo.ClientVO;
-import vo.HotelVO;
-=======
 import objects.*;
 
->>>>>>> origin/master
 public interface ClientBLService {
 	// 提供给界面调用的接口
 

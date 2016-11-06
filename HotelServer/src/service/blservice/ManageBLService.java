@@ -1,14 +1,7 @@
 package service.blservice;
 
-<<<<<<< HEAD
-import Objects.ResultMessage;
-import vo.ClientVO;
-import vo.HotelWorkerVO;
-import vo.WebMarketVO;
-=======
 import vo.*;
 import objects.*;
->>>>>>> origin/master
 
 public interface ManageBLService {
 	// 提供给界面调用的接口

@@ -2,17 +2,8 @@ package service;
 
 import java.util.ArrayList;
 
-<<<<<<< HEAD
-import Objects.HotelStrategy;
-import Objects.OrderState;
-import Objects.ResultMessage;
-import Objects.RoomType;
-import Objects.WebStrategy;
-import vo.OrderVO;
-=======
 import vo.*;
 import objects.*;
->>>>>>> origin/master
 
 public interface OrderBLService {
 	// 提供给界面调用的接口

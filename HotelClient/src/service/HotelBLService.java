@@ -2,17 +2,8 @@ package service;
 
 import java.util.ArrayList;
 
-<<<<<<< HEAD
-import Objects.AcommodationInfo;
-import Objects.Hotel;
-import Objects.HotelWorker;
-import Objects.ResultMessage;
-import Objects.Room;
-import vo.HotelVO;
-=======
 import vo.*;
 import objects.*;
->>>>>>> origin/master
 
 public interface HotelBLService {
 	// 提供给界面调用的接口

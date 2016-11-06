@@ -1,17 +1,9 @@
 package driver;
 import java.util.ArrayList;
-<<<<<<< HEAD
-
-import businesslogicsevice.ClientBLService;
-import businesslogicsevice.ResultMessage;
-import vo.ClientVO;
-import vo.HotelVO;
-=======
 import vo.*;
 import service.*;
 import service.blservice.*;
 import objects.*;
->>>>>>> origin/master
 
 
 

@@ -2,19 +2,9 @@ package logiccontroller;
 
 import java.util.ArrayList;
 
-<<<<<<< HEAD
-import Objects.Evaluation;
-import Objects.RoomType;
-import Objects.VIPInfo;
-import businesslogicsevice.ClientBLService;
-import businesslogicsevice.ResultMessage;
-import vo.ClientVO;
-import vo.HotelVO;
-=======
 import objects.*;
 import vo.*;
 import service.blservice.*;
->>>>>>> origin/master
 
 public class ClientController implements ClientBLService{
 	//客户信息

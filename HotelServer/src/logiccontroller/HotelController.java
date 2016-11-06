@@ -1,8 +1,8 @@
 package logiccontroller;
 
+import VO.HotelVO;
 import businesslogicsevice.HotelBLService;
 import businesslogicsevice.ResultMessage;
-import vo.HotelVO;
 
 public class HotelController implements HotelBLService{
 	//酒店信息参数

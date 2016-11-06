@@ -1,10 +1,10 @@
 package logiccontroller;
 
+import VO.ClientVO;
+import VO.HotelWorkerVO;
+import VO.WebMarketVO;
 import businesslogicsevice.ManageBLService;
 import businesslogicsevice.ResultMessage;
-import vo.ClientVO;
-import vo.HotelWorkerVO;
-import vo.WebMarketVO;
 
 public class ManageController implements ManageBLService{
 	//用户的信息参数

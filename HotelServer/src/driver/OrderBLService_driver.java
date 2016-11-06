@@ -2,10 +2,10 @@ package driver;
 
 import java.util.ArrayList;
 
+import VO.ClientVO;
+import VO.OrderVO;
 import businesslogicsevice.OrderBLService;
 import businesslogicsevice.ResultMessage;
-import vo.ClientVO;
-import vo.OrderVO;
 
 public class OrderBLService_driver {
 	public void drive(OrderBLService orderBLService){

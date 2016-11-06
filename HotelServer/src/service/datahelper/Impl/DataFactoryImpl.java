@@ -1,6 +1,6 @@
 package service.datahelper.Impl;
 
-import datahelper.DataFactory;
+import service.datahelper.DataFactory;
 
 public class DataFactoryImpl implements DataFactory{
 

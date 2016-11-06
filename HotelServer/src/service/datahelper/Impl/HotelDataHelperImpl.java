@@ -1,6 +1,6 @@
 package service.datahelper.Impl;
 
-import datahelper.HotelDataHelper;
+import service.datahelper.HotelDataHelper;
 
 public class HotelDataHelperImpl implements HotelDataHelper {
 

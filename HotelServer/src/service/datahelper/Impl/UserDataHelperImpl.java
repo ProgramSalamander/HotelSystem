@@ -1,6 +1,6 @@
 package service.datahelper.Impl;
 
-import datahelper.UserDataHelper;
+import service.datahelper.UserDataHelper;
 
 public class UserDataHelperImpl implements UserDataHelper {
 

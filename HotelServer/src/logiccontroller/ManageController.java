@@ -1,9 +1,7 @@
 package logiccontroller;
 
 
-import java.util.ArrayList;
 import vo.*;
-import service.*;
 import service.blservice.*;
 import objects.*;
 

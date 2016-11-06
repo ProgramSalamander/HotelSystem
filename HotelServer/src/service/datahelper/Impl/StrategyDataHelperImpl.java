@@ -1,6 +1,6 @@
 package service.datahelper.Impl;
 
-import datahelper.StrategyDataHelper;
+import service.datahelper.StrategyDataHelper;
 
 public class StrategyDataHelperImpl implements StrategyDataHelper {
 

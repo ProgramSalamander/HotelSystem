@@ -2,6 +2,7 @@ package logiccontroller;
 
 import java.util.ArrayList;
 
+<<<<<<< HEAD
 import Objects.Evaluation;
 import Objects.RoomType;
 import Objects.VIPInfo;
@@ -9,6 +10,11 @@ import businesslogicsevice.ClientBLService;
 import businesslogicsevice.ResultMessage;
 import vo.ClientVO;
 import vo.HotelVO;
+=======
+import objects.*;
+import vo.*;
+import service.blservice.*;
+>>>>>>> origin/master
 
 public class ClientController implements ClientBLService{
 	//客户信息
@@ -81,45 +87,7 @@ public class ClientController implements ClientBLService{
 		return hotel;
 	}
 
-	@Override
-	public ArrayList<HotelVO> client_searchHotel(RoomType type) {
-		// TODO 自动生成的方法存根
-		return null;
-	}
 
-	@Override
-	public ArrayList<HotelVO> client_searchHotel(int lowprice, int highprice) {
-		// TODO 自动生成的方法存根
-		return null;
-	}
 
-	@Override
-	public ArrayList<HotelVO> client_searchHotel(String inTime, String leaveTime) {
-		// TODO 自动生成的方法存根
-		return null;
-	}
-
-	@Override
-	public ArrayList<HotelVO> client_searchHotel(int star) {
-		// TODO 自动生成的方法存根
-		return null;
-	}
-
-	@Override
-	public ArrayList<HotelVO> client_searchHotel(double lowscore, double highscore) {
-		// TODO 自动生成的方法存根
-		return null;
-	}
-
-	@Override
-	public ResultMessage client_evaluateHotel(Evaluation e, int clientid) {
-		// TODO 自动生成的方法存根
-		return null;
-	}
-
-	@Override
-	public ResultMessage client_enrollVIP(VIPInfo info, int clientid) {
-		// TODO 自动生成的方法存根
-		return null;
-	}
+	
 }

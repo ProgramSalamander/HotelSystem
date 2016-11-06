@@ -2,9 +2,8 @@ package service.dataservice;
 
 import java.util.ArrayList;
 
-import PO.HotelStrategyPO;
-import PO.WebStrategyPO;
-import businesslogicsevice.ResultMessage;
+import po.*;
+import objects.*;
 
 public interface StrategyDataService {
 	//根据酒店name查找对应酒店策略

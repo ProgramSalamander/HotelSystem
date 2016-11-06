@@ -1,9 +1,8 @@
 
 package service.dataservice;
 
-import PO.ClientPO;
-import businesslogicsevice.ResultMessage;
-
+import po.*;
+import objects.*;
 public interface ClientDataService {
 	//根据id查找对应的客户
 	public ClientPO find(int clientid);

@@ -2,9 +2,9 @@ package service;
 
 import java.util.ArrayList;
 
-import VO.ClientVO;
-import VO.HotelVO;
 import Objects.*;
+import vo.ClientVO;
+import vo.HotelVO;
 public interface ClientBLService {
 	//提供给界面调用的接口
 	public ClientVO client_checkInfo(int clientid);

@@ -1,9 +1,9 @@
 package driver;
 
-import VO.HotelStrategyVO;
-import VO.WebStrategyVO;
 import businesslogicsevice.ResultMessage;
 import businesslogicsevice.StrategyBLService;
+import vo.HotelStrategyVO;
+import vo.WebStrategyVO;
 
 public class StrategyBLService_driver {
 	public void drive(StrategyBLService strategyBLService){

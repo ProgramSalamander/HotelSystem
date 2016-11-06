@@ -2,10 +2,10 @@ package logiccontroller;
 
 import java.util.ArrayList;
 
-import VO.ClientVO;
-import VO.OrderVO;
 import businesslogicsevice.OrderBLService;
 import businesslogicsevice.ResultMessage;
+import vo.ClientVO;
+import vo.OrderVO;
 
 public class OrderController implements OrderBLService{
 	//¶©µ¥²ÎÊý

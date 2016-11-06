@@ -1,9 +1,9 @@
 package service;
 
 import Objects.ResultMessage;
-import VO.ClientVO;
-import VO.HotelWorkerVO;
-import VO.WebMarketVO;
+import vo.ClientVO;
+import vo.HotelWorkerVO;
+import vo.WebMarketVO;
 
 public interface ManageBLService {
 	//提供给界面调用的接口

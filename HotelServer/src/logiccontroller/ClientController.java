@@ -5,10 +5,10 @@ import java.util.ArrayList;
 import Objects.Evaluation;
 import Objects.RoomType;
 import Objects.VIPInfo;
-import VO.ClientVO;
-import VO.HotelVO;
 import businesslogicsevice.ClientBLService;
 import businesslogicsevice.ResultMessage;
+import vo.ClientVO;
+import vo.HotelVO;
 
 public class ClientController implements ClientBLService{
 	//客户信息

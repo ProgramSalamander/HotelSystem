@@ -1,9 +1,9 @@
 package logiccontroller;
 
-import VO.HotelStrategyVO;
-import VO.WebStrategyVO;
 import businesslogicsevice.ResultMessage;
 import businesslogicsevice.StrategyBLService;
+import vo.HotelStrategyVO;
+import vo.WebStrategyVO;
 
 
 

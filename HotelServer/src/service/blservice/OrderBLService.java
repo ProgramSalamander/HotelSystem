@@ -7,7 +7,7 @@ import Objects.OrderState;
 import Objects.ResultMessage;
 import Objects.RoomType;
 import Objects.WebStrategy;
-import VO.OrderVO;
+import vo.OrderVO;
 
 public interface OrderBLService {
 		//提供给界面调用的接口

@@ -7,7 +7,7 @@ import Objects.Hotel;
 import Objects.HotelWorker;
 import Objects.ResultMessage;
 import Objects.Room;
-import VO.HotelVO;
+import vo.HotelVO;
 
 public interface HotelBLService {
 	//提供给界面调用的接口

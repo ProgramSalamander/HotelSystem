@@ -1,9 +1,8 @@
 
 package service.dataservice;
 
-import PO.WebManagerPO;
-import PO.WebMarketPO;
-import businesslogicsevice.ResultMessage;
+import po.*;
+import objects.*;
 
 public interface ManageDataService {
 	//根据id查找网站营销人员

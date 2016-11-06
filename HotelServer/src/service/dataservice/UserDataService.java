@@ -2,8 +2,8 @@ package service.dataservice;
 
 import java.util.ArrayList;
 
-import PO.UserPO;
-import businesslogicsevice.ResultMessage;
+import po.*;
+import objects.*;
 
 public interface UserDataService {
 	

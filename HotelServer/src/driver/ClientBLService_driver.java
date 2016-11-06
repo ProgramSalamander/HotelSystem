@@ -1,9 +1,9 @@
 package driver;
 import java.util.ArrayList;
-import VO.ClientVO;
-import VO.HotelVO;
-import businesslogicsevice.ClientBLService;
-import businesslogicsevice.ResultMessage;
+import vo.*;
+import service.*;
+import service.blservice.*;
+import objects.*;
 
 
 

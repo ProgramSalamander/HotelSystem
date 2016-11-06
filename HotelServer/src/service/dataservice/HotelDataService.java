@@ -2,9 +2,8 @@
 package service.dataservice;
 
 import java.util.ArrayList;
-import PO.HotelPO;
-import PO.HotelWorkerPO;
-import businesslogicsevice.ResultMessage;
+import po.*;
+import objects.*;
 
 public interface HotelDataService {
 	//根据酒店名查找酒店

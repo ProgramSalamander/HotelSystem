@@ -28,6 +28,7 @@ public class HotelPO implements Serializable{
 		order=o;
 		evaluation=e;
 	}
+	
 	public String getaddress(){
 		return address;
 	}

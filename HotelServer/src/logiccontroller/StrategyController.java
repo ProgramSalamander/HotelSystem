@@ -8,28 +8,28 @@ import objects.*;
 
 
  public class StrategyController implements StrategyBLService{
-	//é…’åº—ç­–ç•¥ä¿¡æ¯
-		String hotelname="å¼€ä¸šé…¬å®¾";
-		String hotelcondition="æ— ";
+	//¾Æµê²ßÂÔĞÅÏ¢
+		String hotelname="¿ªÒµ³ê±ö";
+		String hotelcondition="ÎŞ";
 		String hotelstart_time="2016-10-14-0:00";
 		String hotelend_time="2016-10-20-0:00";
-		String hotelexecuteway="ä¹æŠ˜";
+		String hotelexecuteway="¾ÅÕÛ";
 		boolean hotelsuperposition=false;
 		
- //ç½‘ç«™ç­–ç•¥ä¿¡æ¯
-    String webname="å¼€ä¸šé…¬å®¾";
-	String webcondition="æ— ";
+ //ÍøÕ¾²ßÂÔĞÅÏ¢
+    String webname="¿ªÒµ³ê±ö";
+	String webcondition="ÎŞ";
 	String webstart_time="2016-10-14-0:00";
 	String webend_time="2016-10-20-0:00";
-	String webexecuteway="ä¹æŠ˜";
+	String webexecuteway="¾ÅÕÛ";
 	boolean websuperposition=false;
 	
-	//é…’åº—å·¥ä½œäººå‘˜åˆ¶å®šä¿ƒé”€ç­–ç•¥
+	//¾Æµê¹¤×÷ÈËÔ±ÖÆ¶¨´ÙÏú²ßÂÔ
 	public HotelStrategyVO hotelstrategy_make(String input){
 		HotelStrategyVO hotelstrategy=new HotelStrategyVO(hotelname,hotelcondition,hotelstart_time,hotelend_time,hotelexecuteway,hotelsuperposition);
 		return hotelstrategy;
 	}
-	//é…’åº—å·¥ä½œäººå‘˜æ›´æ–°é”€å”®ç­–ç•¥
+	//¾Æµê¹¤×÷ÈËÔ±¸üĞÂÏúÊÛ²ßÂÔ
 	public ResultMessage hotelstrategy_update(String input){
 		if(input!=null){
 			return ResultMessage.Success;
@@ -38,12 +38,12 @@ import objects.*;
 				return ResultMessage.Fail;
 			}
 	}
-	//ç½‘ç«™è¥é”€äººå‘˜åˆ¶å®šé”€å”®ç­–ç•¥
+	//ÍøÕ¾ÓªÏúÈËÔ±ÖÆ¶¨ÏúÊÛ²ßÂÔ
 	public WebStrategyVO webstrategy_make(String input){
 		WebStrategyVO webstrategy=new WebStrategyVO(webname,webcondition,webstart_time,webend_time,webexecuteway,websuperposition);
 		return webstrategy;
 	}
-	//ç½‘ç«™è¥é”€äººå‘˜æ›´æ–°é”€å”®ç­–ç•¥
+	//ÍøÕ¾ÓªÏúÈËÔ±¸üĞÂÏúÊÛ²ßÂÔ
 	public ResultMessage webstrategy_update(String input){
 		if(input!=null){
 			return ResultMessage.Success;
@@ -95,7 +95,7 @@ import objects.*;
 	@Override
 	public ArrayList<HotelStrategy> getStrategy(int hotelid, int clientid) {
 		// TODO Auto-generated method stub
-		HotelStrategy hs=new HotelStrategy("å¼€ä¸šé…¬å®¾","æ— ","2016-10-14-0:00","2016-10-20-0:00","ä¹æŠ˜",false);
+		HotelStrategy hs=new HotelStrategy("¿ªÒµ³ê±ö","ÎŞ","2016-10-14-0:00","2016-10-20-0:00","¾ÅÕÛ",false);
 		ArrayList<HotelStrategy> hotelStrategy = new ArrayList<HotelStrategy>();
 		hotelStrategy.add(hs);
 		return hotelStrategy;
@@ -103,7 +103,7 @@ import objects.*;
 	@Override
 	public ArrayList<WebStrategy> getStrategy(int clientid) {
 		// TODO Auto-generated method stub
-		WebStrategy ws=new WebStrategy("å¼€ä¸šé…¬å®¾","æ— ","2016-10-14-0:00","2016-10-20-0:00","ä¹æŠ˜",false);
+		WebStrategy ws=new WebStrategy("¿ªÒµ³ê±ö","ÎŞ","2016-10-14-0:00","2016-10-20-0:00","¾ÅÕÛ",false);
 		ArrayList<WebStrategy> webStrategy = new ArrayList<WebStrategy>();
 		webStrategy.add(ws);
 		return webStrategy;

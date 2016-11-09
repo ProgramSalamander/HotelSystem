@@ -8,28 +8,28 @@ import objects.*;
 
 
  public class StrategyController implements StrategyBLService{
-	//¾Æµê²ßÂÔĞÅÏ¢
-		String hotelname="¿ªÒµ³ê±ö";
-		String hotelcondition="ÎŞ";
+	//é…’åº—ç­–ç•¥ä¿¡æ¯
+		String hotelname="å¼€ä¸šé…¬å®¾";
+		String hotelcondition="æ— ";
 		String hotelstart_time="2016-10-14-0:00";
 		String hotelend_time="2016-10-20-0:00";
-		String hotelexecuteway="¾ÅÕÛ";
+		String hotelexecuteway="ä¹æŠ˜";
 		boolean hotelsuperposition=false;
 		
- //ÍøÕ¾²ßÂÔĞÅÏ¢
-    String webname="¿ªÒµ³ê±ö";
-	String webcondition="ÎŞ";
+ //ç½‘ç«™ç­–ç•¥ä¿¡æ¯
+    String webname="å¼€ä¸šé…¬å®¾";
+	String webcondition="æ— ";
 	String webstart_time="2016-10-14-0:00";
 	String webend_time="2016-10-20-0:00";
-	String webexecuteway="¾ÅÕÛ";
+	String webexecuteway="ä¹æŠ˜";
 	boolean websuperposition=false;
 	
-	//¾Æµê¹¤×÷ÈËÔ±ÖÆ¶¨´ÙÏú²ßÂÔ
+	//é…’åº—å·¥ä½œäººå‘˜åˆ¶å®šä¿ƒé”€ç­–ç•¥
 	public HotelStrategyVO hotelstrategy_make(String input){
 		HotelStrategyVO hotelstrategy=new HotelStrategyVO(hotelname,hotelcondition,hotelstart_time,hotelend_time,hotelexecuteway,hotelsuperposition);
 		return hotelstrategy;
 	}
-	//¾Æµê¹¤×÷ÈËÔ±¸üĞÂÏúÊÛ²ßÂÔ
+	//é…’åº—å·¥ä½œäººå‘˜æ›´æ–°é”€å”®ç­–ç•¥
 	public ResultMessage hotelstrategy_update(String input){
 		if(input!=null){
 			return ResultMessage.Success;
@@ -38,12 +38,12 @@ import objects.*;
 				return ResultMessage.Fail;
 			}
 	}
-	//ÍøÕ¾ÓªÏúÈËÔ±ÖÆ¶¨ÏúÊÛ²ßÂÔ
+	//ç½‘ç«™è¥é”€äººå‘˜åˆ¶å®šé”€å”®ç­–ç•¥
 	public WebStrategyVO webstrategy_make(String input){
 		WebStrategyVO webstrategy=new WebStrategyVO(webname,webcondition,webstart_time,webend_time,webexecuteway,websuperposition);
 		return webstrategy;
 	}
-	//ÍøÕ¾ÓªÏúÈËÔ±¸üĞÂÏúÊÛ²ßÂÔ
+	//ç½‘ç«™è¥é”€äººå‘˜æ›´æ–°é”€å”®ç­–ç•¥
 	public ResultMessage webstrategy_update(String input){
 		if(input!=null){
 			return ResultMessage.Success;
@@ -55,31 +55,57 @@ import objects.*;
 	@Override
 	public ResultMessage hotelstrategy_make(HotelStrategy strategy) {
 		// TODO Auto-generated method stub
-		return null;
+		if(strategy!=null){
+			return ResultMessage.Success;
+			}
+			else{
+				return ResultMessage.Fail;
+			}
 	}
 	@Override
 	public ResultMessage hotelstrategy_update(HotelStrategy strategy) {
 		// TODO Auto-generated method stub
-		return null;
+		if(strategy!=null){
+			return ResultMessage.Success;
+			}
+			else{
+				return ResultMessage.Fail;
+			}
 	}
 	@Override
 	public ResultMessage webstrategy_make(WebStrategy strategy) {
 		// TODO Auto-generated method stub
-		return null;
+		if(strategy!=null){
+			return ResultMessage.Success;
+			}
+			else{
+				return ResultMessage.Fail;
+			}
 	}
 	@Override
 	public ResultMessage webstrategy_update(WebStrategy strategy) {
 		// TODO Auto-generated method stub
-		return null;
+		if(strategy!=null){
+			return ResultMessage.Success;
+			}
+			else{
+				return ResultMessage.Fail;
+			}
 	}
 	@Override
 	public ArrayList<HotelStrategy> getStrategy(int hotelid, int clientid) {
 		// TODO Auto-generated method stub
-		return null;
+		HotelStrategy hs=new HotelStrategy("å¼€ä¸šé…¬å®¾","æ— ","2016-10-14-0:00","2016-10-20-0:00","ä¹æŠ˜",false);
+		ArrayList<HotelStrategy> hotelStrategy = new ArrayList<HotelStrategy>();
+		hotelStrategy.add(hs);
+		return hotelStrategy;
 	}
 	@Override
 	public ArrayList<WebStrategy> getStrategy(int clientid) {
 		// TODO Auto-generated method stub
-		return null;
+		WebStrategy ws=new WebStrategy("å¼€ä¸šé…¬å®¾","æ— ","2016-10-14-0:00","2016-10-20-0:00","ä¹æŠ˜",false);
+		ArrayList<WebStrategy> webStrategy = new ArrayList<WebStrategy>();
+		webStrategy.add(ws);
+		return webStrategy;
 	}
 }

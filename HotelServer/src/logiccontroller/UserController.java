@@ -13,7 +13,7 @@ public class UserController implements UserBLService{
 	}
 
 	@Override
-	public ResultMessage regist(String username, String password) {
+	public ResultMessage register(String username, String password) {
 		// TODO Auto-generated method stub
 		return null;
 	}

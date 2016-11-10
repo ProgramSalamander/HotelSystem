@@ -8,26 +8,26 @@ import service.blservice.*;
 import objects.*;
 
 public class HotelController implements HotelBLService{
-	//é…’åº—ä¿¡æ¯å‚æ•°
-		String hotel_address="å—äº¬";
-		String hotel_business_address="æ–°è¡—å£";
-		String hotel_name="å¦‚å®¶";
-		String hotel_introduction="å¥½";
-		String hotel_service="å¥½";
-		String hotel_room_state="æœªé¢„å®š";
-		String hotel_room_type="åŒäººæˆ¿";
+	//¾ÆµêĞÅÏ¢²ÎÊı
+		String hotel_address="ÄÏ¾©";
+		String hotel_business_address="ĞÂ½Ö¿Ú";
+		String hotel_name="Èç¼Ò";
+		String hotel_introduction="ºÃ";
+		String hotel_service="ºÃ";
+		String hotel_room_state="Î´Ô¤¶¨";
+		String hotel_room_type="Ë«ÈË·¿";
 		int hotel_room_number=1;
 		int hotel_room_price=200;
-		String hotel_order="æ— ";
-		String hotel_evaluation="æ— ";
+		String hotel_order="ÎŞ";
+		String hotel_evaluation="ÎŞ";
 		
-	//é…’åº—å·¥ä½œäººå‘˜çš„ä¿¡æ¯å‚æ•°
+	//¾Æµê¹¤×÷ÈËÔ±µÄĞÅÏ¢²ÎÊı
 		String hotelWorker_name="tom";
 		String hotelWorker_contact="11111111111";
-		String hotelWorker_hotel="å¦‚å®¶";
+		String hotelWorker_hotel="Èç¼Ò";
 
 		@Override
-		//é…’åº—å·¥ä½œäººå‘˜æ›´æ–°é…’åº—ä¿¡æ¯
+		//¾Æµê¹¤×÷ÈËÔ±¸üĞÂ¾ÆµêĞÅÏ¢
 		public ResultMessage hotel_updateInfo(HotelVO vo) {
 			// TODO Auto-generated method stub
 			if(vo!=null)
@@ -79,7 +79,7 @@ public class HotelController implements HotelBLService{
 		@Override
 		public ResultMessage addHotel(Hotel hotel) {
 			// TODO Auto-generated method stub
-			if(hotel_name=="å¦‚å®¶")
+			if(hotel_name=="Èç¼Ò")
 				return ResultMessage.Success;
 			else return ResultMessage.Fail;
 		}

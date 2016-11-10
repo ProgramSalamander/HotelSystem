@@ -2,6 +2,7 @@ package vo;
 
 
 public class ClientVO {
+	int clientid;
 	String name;
 	String contact;
 	int credit;
@@ -11,7 +12,8 @@ public class ClientVO {
 	String birthday;
 	String company;
 	
-	public ClientVO(String n,String c,int c1,String cr,int m,String mt,String b,String co){
+	public ClientVO(int id,String n,String c,int c1,String cr,int m,String mt,String b,String co){
+		clientid = id;
 		name=n;
 		contact=c;
 		credit=c1;
@@ -20,6 +22,10 @@ public class ClientVO {
 		member_type=mt;
 		birthday=b;
 		company=co;
+	}
+	
+	public int getid(){
+		return clientid;
 	}
 	public String getname(){
 		return name;

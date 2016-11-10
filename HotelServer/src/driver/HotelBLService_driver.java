@@ -31,7 +31,7 @@ public class HotelBLService_driver {
 
 		//测试hotel_updateInfo
 		ResultMessage resultMessage = hotelBLService.hotel_updateInfo(
-				new HotelVO("南京","新街口", "如家", "如家酒店", "酒店所有服务", "可用", "双人房", 1, 100, "", "good"));
+				new HotelVO(1,"南京","新街口", "如家", "如家酒店", "酒店所有服务", "可用", "双人房", 1, 100, "", "good"));
 		if(resultMessage == ResultMessage.Success){
 			System.out.println("更新酒店信息成功");
 		}

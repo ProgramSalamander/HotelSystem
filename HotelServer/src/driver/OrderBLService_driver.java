@@ -70,7 +70,7 @@ public class OrderBLService_driver {
 //		System.out.println(order1.getexpect_number_of_people());
 		
 		//酒店工作人员执行订单
-		ClientVO c=new ClientVO("Jack","11111111111",0,"无",000001,"个人会员","1997-1-1","无");
+		ClientVO c=new ClientVO(1,"Jack","11111111111",0,"无",000001,"个人会员","1997-1-1","无");
 		ResultMessage result_hotel=orderBLService.order_hotel_execute(1);
 		if(result_hotel==ResultMessage.Success){
 			System.out.println("执行订单成功");

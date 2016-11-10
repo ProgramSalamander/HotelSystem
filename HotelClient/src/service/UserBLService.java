@@ -16,5 +16,5 @@ public interface UserBLService {
 	 * @param password
 	 * @return ÓÃ»§×¢²á
 	 */
-	public ResultMessage regist(String username, String password);
+	public ResultMessage register(String username, String password);
 }

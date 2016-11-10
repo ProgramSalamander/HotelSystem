@@ -1,9 +1,11 @@
 package mock;
 
-public class MockHotel1 {
+import objects.Hotel;
+
+public class MockHotel10 extends Hotel{
 	int hotel_id;
 	
-	public MockHotel1(int id){
+	public MockHotel10(int id){
 		hotel_id=id;
 	}
 	

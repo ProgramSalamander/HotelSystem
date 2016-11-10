@@ -6,12 +6,12 @@ import java.util.ArrayList;
 
 import org.junit.Test;
 
-import mock.MockClient1;
-import mock.MockHotel1;
-import mock.MockOrder1;
-import mock.MockOrder2;
-import mock.MockOrder3;
-import mock.MockRoom1;
+import mock.MockClient10;
+import mock.MockHotel10;
+import mock.MockOrder10;
+import mock.MockOrder11;
+import mock.MockOrder12;
+import mock.MockRoom10;
 import objects.HotelStrategy;
 import objects.OrderState;
 import objects.ResultMessage;
@@ -24,7 +24,7 @@ public class Ordertset {
 
 	@Test
 	public void testorder_client_browse1(){
-		MockClient1 client1=new MockClient1(1);
+		MockClient10 client1=new MockClient10(1);
 		OrderBLServiceImpl OrderImpl=new OrderBLServiceImpl();
 		ArrayList<OrderVO> orderlist=OrderImpl.order_client_browse(client1.getclient_id());
 		ArrayList<OrderVO> expect_orderlist=new ArrayList<OrderVO>();
@@ -36,8 +36,8 @@ public class Ordertset {
 
 	@Test
 	public void testorder_client_browse2(){
-		MockClient1 client1=new MockClient1(1);
-		MockOrder2 order1=new MockOrder2(OrderState.NORMAL);
+		MockClient10 client1=new MockClient10(1);
+		MockOrder11 order1=new MockOrder11(OrderState.NORMAL);
 		OrderBLServiceImpl OrderImpl=new OrderBLServiceImpl();
 		ArrayList<OrderVO> orderlist=OrderImpl.order_client_browse(client1.getclient_id(),order1.getorder_state());
 		ArrayList<OrderVO> expect_orderlist=new ArrayList<OrderVO>();
@@ -49,8 +49,8 @@ public class Ordertset {
 	
 	@Test
 	public void testorder_client_browse3(){
-		MockClient1 client1=new MockClient1(1);
-		MockOrder3 order1=new MockOrder3(false);
+		MockClient10 client1=new MockClient10(1);
+		MockOrder12 order1=new MockOrder12(false);
 		OrderBLServiceImpl OrderImpl=new OrderBLServiceImpl();
 		ArrayList<OrderVO> orderlist=OrderImpl.order_client_browse(client1.getclient_id(),order1.getorder_execute());
 		ArrayList<OrderVO> expect_orderlist=new ArrayList<OrderVO>();
@@ -62,7 +62,7 @@ public class Ordertset {
 	
 	@Test
 	public void testorder_hotel_browse1(){
-		MockHotel1 hotel1=new MockHotel1(1);
+		MockHotel10 hotel1=new MockHotel10(1);
 		OrderBLServiceImpl OrderImpl=new OrderBLServiceImpl();
 		ArrayList<OrderVO> orderlist=OrderImpl.order_hotel_browse(hotel1.gethotel_id());
 		ArrayList<OrderVO> expect_orderlist=new ArrayList<OrderVO>();
@@ -74,8 +74,8 @@ public class Ordertset {
 	
 	@Test
 	public void testorder_hotel_browse2(){
-		MockHotel1 hotel1=new MockHotel1(1);
-		MockOrder2 order1=new MockOrder2(OrderState.NORMAL);
+		MockHotel10 hotel1=new MockHotel10(1);
+		MockOrder11 order1=new MockOrder11(OrderState.NORMAL);
 		OrderBLServiceImpl OrderImpl=new OrderBLServiceImpl();
 		ArrayList<OrderVO> orderlist=OrderImpl.order_client_browse(hotel1.gethotel_id(),order1.getorder_state());
 		ArrayList<OrderVO> expect_orderlist=new ArrayList<OrderVO>();
@@ -87,8 +87,8 @@ public class Ordertset {
 	
 	@Test
 	public void testorder_hotel_browse3(){
-		MockHotel1 hotel1=new MockHotel1(1);
-		MockOrder3 order1=new MockOrder3(false);
+		MockHotel10 hotel1=new MockHotel10(1);
+		MockOrder12 order1=new MockOrder12(false);
 		OrderBLServiceImpl OrderImpl=new OrderBLServiceImpl();
 		ArrayList<OrderVO> orderlist=OrderImpl.order_client_browse(hotel1.gethotel_id(),order1.getorder_execute());
 		ArrayList<OrderVO> expect_orderlist=new ArrayList<OrderVO>();
@@ -100,8 +100,8 @@ public class Ordertset {
 	
 	@Test
 	public void testorder_client_cancel(){
-		MockClient1 client1=new MockClient1(1);
-		MockOrder1 order1=new MockOrder1(1);
+		MockClient10 client1=new MockClient10(1);
+		MockOrder10 order1=new MockOrder10(1);
 		OrderBLServiceImpl OrderImpl=new OrderBLServiceImpl();
 		ResultMessage order_cancel_result=OrderImpl.order_client_cancel(client1.getclient_id(), order1.getorder_id());
 		
@@ -119,7 +119,7 @@ public class Ordertset {
 	
 	@Test
 	public void testorder_hotel_execute(){
-		MockOrder1 order1=new MockOrder1(1);
+		MockOrder10 order1=new MockOrder10(1);
 		OrderBLServiceImpl OrderImpl=new OrderBLServiceImpl();
 		ResultMessage order_hotel_execute_result=OrderImpl.order_hotel_execute(order1.getorder_id());
 		
@@ -139,7 +139,7 @@ public class Ordertset {
 	
 	@Test
 	public void testorder_market_cancelAbnormal(){
-		MockOrder1 order1=new MockOrder1(1);
+		MockOrder10 order1=new MockOrder10(1);
 		OrderBLServiceImpl OrderImpl=new OrderBLServiceImpl();
 		ResultMessage order_marlet_cancel_result=OrderImpl.order_market_cancelAbnormal(order1.getorder_id());
 		
@@ -148,7 +148,7 @@ public class Ordertset {
 	
 	@Test
 	public void testcalculateTotalwithoutStrategy(){
-		MockRoom1 room1=new MockRoom1(RoomType.SINGLEROOM,1);
+		MockRoom10 room1=new MockRoom10(RoomType.SINGLEROOM,1);
 		OrderBLServiceImpl OrderImpl=new OrderBLServiceImpl();
 		int total=OrderImpl.calculateTotalwithoutStrategy(room1.getroomtye(),room1.getroomnum());
 		
@@ -157,7 +157,7 @@ public class Ordertset {
 
 	@Test
 	public void testcalculateTotalwithStrategy(){
-		MockRoom1 room1=new MockRoom1(RoomType.SINGLEROOM,1);
+		MockRoom10 room1=new MockRoom10(RoomType.SINGLEROOM,1);
 		ArrayList<HotelStrategy> hotelstrategy=new ArrayList<HotelStrategy>();
 		ArrayList<WebStrategy> webstrategy=new ArrayList<WebStrategy>();
 		OrderBLServiceImpl OrderImpl=new OrderBLServiceImpl();
@@ -169,7 +169,7 @@ public class Ordertset {
 	
 	@Test
 	public void testupdateActualLeaveTime(){
-		MockOrder1 order1=new MockOrder1(1);
+		MockOrder10 order1=new MockOrder10(1);
 		OrderBLServiceImpl OrderImpl=new OrderBLServiceImpl();
 		ResultMessage result=OrderImpl.updateActualLeaveTime(order1.getorder_id(), "2016-12-1-12-00-00");
 		

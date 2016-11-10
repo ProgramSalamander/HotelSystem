@@ -1,11 +1,12 @@
 package mock;
 
+import objects.Order;
 import objects.OrderState;
 
-public class MockOrder2 {
+public class MockOrder11 extends Order{
 	OrderState orderstate;
 	
-	public MockOrder2(OrderState state){
+	public MockOrder11(OrderState state){
 		orderstate=state;
 	}
 	

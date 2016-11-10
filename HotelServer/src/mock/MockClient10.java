@@ -1,9 +1,11 @@
 package mock;
 
-public class MockClient1 {
+import objects.Client;
+
+public class MockClient10 extends Client{
 	int client_id;
 	
-	public MockClient1(int id){
+	public MockClient10(int id){
 		client_id=id;
 	}
 	

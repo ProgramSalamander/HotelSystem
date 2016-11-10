@@ -1,10 +1,11 @@
 package mock;
 
+import objects.Order;
 
-public class MockOrder3 {
+public class MockOrder12 extends Order{
 	boolean isexecute;
 	
-	public MockOrder3(boolean x){
+	public MockOrder12(boolean x){
 		isexecute=x;;
 	}
 	

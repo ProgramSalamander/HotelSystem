@@ -2,10 +2,10 @@ package mock;
 
 import objects.Order;
 
-public class MockOrder1 extends Order{
+public class MockOrder10 extends Order{
 	int order_id;
 	
-	public MockOrder1(int id){
+	public MockOrder10(int id){
 		order_id=id;
 	}
 	

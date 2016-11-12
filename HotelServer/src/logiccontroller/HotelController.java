@@ -3,31 +3,36 @@ package logiccontroller;
 
 import java.util.ArrayList;
 
-import vo.*;
-import service.blservice.*;
-import objects.*;
+import objects.AccommodationInfo;
+import objects.Hotel;
+import objects.HotelWorker;
+import objects.ResultMessage;
+import objects.Room;
+import service.blservice.HotelBLService;
+import vo.HotelVO;
 
 public class HotelController implements HotelBLService{
-	//é…’åº—ä¿¡æ¯å‚æ•°
-		String hotel_address="å—äº¬";
-		String hotel_business_address="æ–°è¡—å£";
-		String hotel_name="å¦‚å®¶";
-		String hotel_introduction="å¥½";
-		String hotel_service="å¥½";
-		String hotel_room_state="æœªé¢„å®š";
-		String hotel_room_type="åŒäººæˆ¿";
+	//¾ÆµêĞÅÏ¢²ÎÊı
+		String hotel_address="ÄÏ¾©";
+		String hotel_business_address="ĞÂ½Ö¿Ú";
+		String hotel_name="Èç¼Ò";
+		String hotel_introduction="ºÃ";
+		String hotel_service="ºÃ";
+		String hotel_room_state="Î´Ô¤¶¨";
+		String hotel_room_type="Ë«ÈË·¿";
 		int hotel_room_number=1;
 		int hotel_room_price=200;
-		String hotel_order="æ— ";
-		String hotel_evaluation="æ— ";
+		String hotel_order="ÎŞ";
+		String hotel_evaluation="ÎŞ";
 		
-	//é…’åº—å·¥ä½œäººå‘˜çš„ä¿¡æ¯å‚æ•°
+
+	//¾Æµê¹¤×÷ÈËÔ±µÄĞÅÏ¢²ÎÊı
 		String hotelWorker_name="tom";
 		String hotelWorker_contact="11111111111";
-		String hotelWorker_hotel="å¦‚å®¶";
+		String hotelWorker_hotel="Èç¼Ò";
 
 		@Override
-		//é…’åº—å·¥ä½œäººå‘˜æ›´æ–°é…’åº—ä¿¡æ¯
+		//¾Æµê¹¤×÷ÈËÔ±¸üĞÂ¾ÆµêĞÅÏ¢
 		public ResultMessage hotel_updateInfo(HotelVO vo) {
 			// TODO Auto-generated method stub
 			if(vo!=null)
@@ -39,70 +44,54 @@ public class HotelController implements HotelBLService{
 		@Override
 		public HotelVO hotel_checkInfo(int hotelid) {
 			// TODO Auto-generated method stub
-			return new HotelVO(hotel_address,hotel_business_address,hotel_name,hotel_introduction,hotel_service,
-					hotel_room_state,hotel_room_type,hotel_room_number,hotel_room_price,hotel_order,hotel_evaluation);
+			return null;
 		}
 
 		@Override
-		public ResultMessage hotel_importRoom(Room importroom) {
+		public ResultMessage hotel_importRoom(Room room) {
 			// TODO Auto-generated method stub
-			if(importroom!=null)
-				return ResultMessage.Success;
-			else return ResultMessage.Fail;
+			return null;
 		}
 
 		@Override
 		public ResultMessage hotel_updateAccomodation(AccommodationInfo info) {
 			// TODO Auto-generated method stub
-			if(info!=null)
-				return ResultMessage.Success;
-			else return ResultMessage.Fail;
+			return null;
 		}
 
 		@Override
 		public Hotel searchHotel(int hotelid) {
 			// TODO Auto-generated method stub
-			return new Hotel();
+			return null;
 		}
 
 		@Override
 		public ArrayList<Hotel> previousHotel(int clientid) {
 			// TODO Auto-generated method stub
-			ArrayList<Hotel> HotelList_Client=new ArrayList<Hotel>();
-			Hotel hotel=new Hotel();
-			HotelList_Client.add(hotel);
-			return HotelList_Client;
+			return null;
 		}
 
 		@Override
 		public ResultMessage addHotel(Hotel hotel) {
 			// TODO Auto-generated method stub
-			if(hotel_name=="å¦‚å®¶")
-				return ResultMessage.Success;
-			else return ResultMessage.Fail;
+			return null;
 		}
 
 		@Override
 		public ResultMessage addHotelWorker(HotelWorker worker) {
 			// TODO Auto-generated method stub
-			if(worker!=null)
-				return ResultMessage.Success;
-			else return ResultMessage.Fail;
+			return null;
 		}
 
 		@Override
 		public HotelWorker searchHotelWorker(int hotelid) {
 			// TODO Auto-generated method stub
-			return new HotelWorker(hotelWorker_name,hotelWorker_contact,hotelWorker_hotel);
+			return null;
 		}
 
 		@Override
 		public ResultMessage updateHotelWokerInfo(int hotelid, HotelWorker worker) {
 			// TODO Auto-generated method stub
-			if(hotelid!=0){
-				return ResultMessage.Success;
-			}
-			else
-				return ResultMessage.Fail;
+			return null;
 		}
 }

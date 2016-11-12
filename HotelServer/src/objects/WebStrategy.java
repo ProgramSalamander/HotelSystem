@@ -1,7 +1,8 @@
 package objects;
 
 public class WebStrategy {
-	private String name;
+
+/*	private String name;
 	private String condition;
 	private String start_time;
 	private String end_time;
@@ -58,5 +59,6 @@ public class WebStrategy {
 	public boolean getsuperposition(){
 		return superposition;
 	}
+	*/
 }
 

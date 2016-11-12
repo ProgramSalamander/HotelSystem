@@ -1,74 +1,54 @@
 package vo;
 
-import java.util.ArrayList;
-
-import objects.VIPInfo;
 
 public class ClientVO {
 	int clientid;
-	String client_name;
+	String name;
 	String contact;
 	int credit;
-	ArrayList<String> credit_record;
-	VIPInfo info;
-
-	public ClientVO(int clientid, String client_name, String contact, int credit, ArrayList<String> credit_record,
-			VIPInfo info) {
-		super();
-		this.clientid = clientid;
-		this.client_name = client_name;
-		this.contact = contact;
-		this.credit = credit;
-		this.credit_record = credit_record;
-		this.info = info;
+	String credit_record;
+	int memberid;
+	String member_type;
+	String birthday;
+	String company;
+	
+	public ClientVO(int id,String n,String c,int c1,String cr,int m,String mt,String b,String co){
+		clientid = id;
+		name=n;
+		contact=c;
+		credit=c1;
+		credit_record=cr;
+		memberid=m;
+		member_type=mt;
+		birthday=b;
+		company=co;
 	}
-
-	public int getClientid() {
+	
+	public int getid(){
 		return clientid;
 	}
-
-	public void setClientid(int clientid) {
-		this.clientid = clientid;
+	public String getname(){
+		return name;
 	}
-
-	public String getClient_name() {
-		return client_name;
-	}
-
-	public void setClient_name(String client_name) {
-		this.client_name = client_name;
-	}
-
-	public String getContact() {
+	public String getcontact(){
 		return contact;
 	}
-
-	public void setContact(String contact) {
-		this.contact = contact;
-	}
-
-	public int getCredit() {
+	public int getcredit(){
 		return credit;
 	}
-
-	public void setCredit(int credit) {
-		this.credit = credit;
-	}
-
-	public ArrayList<String> getCredit_record() {
+	public String getcredit_record(){
 		return credit_record;
 	}
-
-	public void setCredit_record(ArrayList<String> credit_record) {
-		this.credit_record = credit_record;
+	public int getmemberid(){
+		return memberid;
 	}
-
-	public VIPInfo getInfo() {
-		return info;
+	public String getmember_type(){
+		return member_type;
 	}
-
-	public void setInfo(VIPInfo info) {
-		this.info = info;
+	public String getbirthday(){
+		return birthday;
 	}
-
+	public String getcompany(){
+		return company;
+	}	
 }

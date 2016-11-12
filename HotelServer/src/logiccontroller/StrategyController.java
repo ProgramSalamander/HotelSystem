@@ -55,57 +55,31 @@ import objects.*;
 	@Override
 	public ResultMessage hotelstrategy_make(HotelStrategy strategy) {
 		// TODO Auto-generated method stub
-		if(strategy!=null){
-			return ResultMessage.Success;
-			}
-			else{
-				return ResultMessage.Fail;
-			}
+		return null;
 	}
 	@Override
 	public ResultMessage hotelstrategy_update(HotelStrategy strategy) {
 		// TODO Auto-generated method stub
-		if(strategy!=null){
-			return ResultMessage.Success;
-			}
-			else{
-				return ResultMessage.Fail;
-			}
+		return null;
 	}
 	@Override
 	public ResultMessage webstrategy_make(WebStrategy strategy) {
 		// TODO Auto-generated method stub
-		if(strategy!=null){
-			return ResultMessage.Success;
-			}
-			else{
-				return ResultMessage.Fail;
-			}
+		return null;
 	}
 	@Override
 	public ResultMessage webstrategy_update(WebStrategy strategy) {
 		// TODO Auto-generated method stub
-		if(strategy!=null){
-			return ResultMessage.Success;
-			}
-			else{
-				return ResultMessage.Fail;
-			}
+		return null;
 	}
 	@Override
 	public ArrayList<HotelStrategy> getStrategy(int hotelid, int clientid) {
 		// TODO Auto-generated method stub
-		HotelStrategy hs=new HotelStrategy("开业酬宾","无","2016-10-14-0:00","2016-10-20-0:00","九折",false);
-		ArrayList<HotelStrategy> hotelStrategy = new ArrayList<HotelStrategy>();
-		hotelStrategy.add(hs);
-		return hotelStrategy;
+		return null;
 	}
 	@Override
 	public ArrayList<WebStrategy> getStrategy(int clientid) {
 		// TODO Auto-generated method stub
-		WebStrategy ws=new WebStrategy("开业酬宾","无","2016-10-14-0:00","2016-10-20-0:00","九折",false);
-		ArrayList<WebStrategy> webStrategy = new ArrayList<WebStrategy>();
-		webStrategy.add(ws);
-		return webStrategy;
+		return null;
 	}
 }

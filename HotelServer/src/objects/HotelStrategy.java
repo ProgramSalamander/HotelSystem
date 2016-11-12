@@ -1,7 +1,7 @@
 package objects;
 
 public class HotelStrategy {
-	private String name;
+/*	private String name;
 	private String condition;
 	private String start_time;
 	private String end_time;
@@ -58,4 +58,5 @@ public class HotelStrategy {
 	public boolean getsuperposition(){
 		return superposition;
 	}
+	*/
 }

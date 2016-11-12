@@ -1,7 +1,7 @@
 package objects;
 
 public class Room {
-	String room_type;
+/*	String room_type;
 	String room_price;
 	int room_number;
 	String check_in_date;
@@ -30,4 +30,5 @@ public class Room {
 	public String getCheckOutDate(){
 		return check_out_date;
 	}
+	*/
 }

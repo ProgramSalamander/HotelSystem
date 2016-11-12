@@ -30,7 +30,8 @@ public class ManageBLService_driver {
 		
 
 		//测试manage_updateClient
-		ResultMessage resultMessage = manageBLService.manage_updateClient(1);
+		ClientVO clientvo = new ClientVO(1,"1","1",1,"1",1,"1","1","1");
+		ResultMessage resultMessage = manageBLService.manage_updateClient(clientvo);
 		if(resultMessage==ResultMessage.Success){
 			System.out.println("更新客户信息成功");
 		}
@@ -41,7 +42,7 @@ public class ManageBLService_driver {
 		
 
 		//测试manage_addHotel
-		resultMessage = manageBLService.manage_addHotel(1);
+		resultMessage = manageBLService.manage_addHotel(new HotelVO(1,"1","1","1","1","1","1","1",1,1,"1","1"));
 		if(resultMessage==ResultMessage.Success)
 			System.out.println("添加酒店成功");
 		else
@@ -50,7 +51,7 @@ public class ManageBLService_driver {
 		
 
 		//测试manage_addHotelWorker
-		resultMessage = manageBLService.manage_addHotelWorker(1, new HotelWorkerVO("lucy", "11111111111", "格林豪泰"));
+		resultMessage = manageBLService.manage_addHotelWorker(new HotelWorkerVO(1,"lucy", "11111111111", "格林豪泰"));
 		if(resultMessage==ResultMessage.Success)
 			System.out.println("添加酒店工作人员成功");
 		else
@@ -67,7 +68,7 @@ public class ManageBLService_driver {
 		
 
 		//测试manage_updateHotelWorker
-		resultMessage = manageBLService.manage_updateHotelWorker(1);
+		resultMessage = manageBLService.manage_updateHotelWorker(new HotelWorkerVO(1,"1","1","1"));
 		if(resultMessage==ResultMessage.Success)
 			System.out.println("更新酒店工作人员信息成功");
 		else
@@ -76,7 +77,7 @@ public class ManageBLService_driver {
 		
 
 		//测试manage_addMarketWorker
-		resultMessage = manageBLService.manage_addMarketWorker(new WebMarketVO("jack", "11111111111"));
+		resultMessage = manageBLService.manage_addMarketWorker(new WebMarketVO(1,"jack", "11111111111"));
 		if(resultMessage==ResultMessage.Success)
 			System.out.println("添加网络营销人员成功");
 		else
@@ -92,7 +93,7 @@ public class ManageBLService_driver {
 		
 
 		//测试manage_updateMarketWorker
-		resultMessage = manageBLService.manage_updateMarketWorker(new WebMarketVO("tom", "11111111111"));
+		resultMessage = manageBLService.manage_updateMarketWorker(new WebMarketVO(1,"tom", "11111111111"));
 		if(resultMessage==ResultMessage.Success)
 			System.out.println("更新网络营销人员信息成功");
 		else

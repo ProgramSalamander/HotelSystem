@@ -1,13 +1,13 @@
-package po;
+package mork;
 
-import java.io.Serializable;
+import objects.WebMarket;
 
-public class WebMarketPO implements Serializable{
+public class MorkWebMarket21 extends WebMarket {
 	int webmarketid;
 	String name;
 	String contact;
 	
-	public WebMarketPO(int id,String n,String c){
+	public MorkWebMarket21(int id,String n,String c){
 		webmarketid = id;
 		name=n;
 		contact=c;

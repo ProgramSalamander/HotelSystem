@@ -1,7 +1,10 @@
 package service.blservice;
 
-import vo.*;
-import objects.*;
+import objects.ResultMessage;
+import vo.ClientVO;
+import vo.HotelVO;
+import vo.HotelWorkerVO;
+import vo.WebMarketVO;
 
 public interface ManageBLService {
 	// 提供给界面调用的接口
@@ -15,20 +18,20 @@ public interface ManageBLService {
 		 * @param clientid
 		 * @return 更新客户信息
 		 */
-		public ResultMessage manage_updateClient(int clientid);
+		public ResultMessage manage_updateClient(ClientVO clientvo);
 
 		/**
 		 * @param hotelid
 		 * @return 添加酒店
 		 */
-		public ResultMessage manage_addHotel(int hotelid);
+		public ResultMessage manage_addHotel(HotelVO hotelvo);
 
 		/**
 		 * @param hotelid
 		 * @param w
 		 * @return 添加酒店工作人员
 		 */
-		public ResultMessage manage_addHotelWorker(int hotelid, HotelWorkerVO w);
+		public ResultMessage manage_addHotelWorker(HotelWorkerVO w);
 
 		/**
 		 * @param hotelid
@@ -40,7 +43,7 @@ public interface ManageBLService {
 		 * @param hotelid
 		 * @return 更新酒店工作人员信息
 		 */
-		public ResultMessage manage_updateHotelWorker(int hotelid);
+		public ResultMessage manage_updateHotelWorker(HotelWorkerVO w);
 
 		/**
 		 * @param mw

@@ -3,6 +3,7 @@ package po;
 import java.io.Serializable;
 
 public class HotelPO implements Serializable{
+	int hotelid ;
 	String address;
 	String bussiness_address;
 	String name;
@@ -15,7 +16,8 @@ public class HotelPO implements Serializable{
 	String order;
 	String evaluation;
 	
-	public HotelPO(String a,String ba,String na,String in,String s,String rs,String rt,int rn,int rp,String o,String e){
+	public HotelPO(int id,String a,String ba,String na,String in,String s,String rs,String rt,int rn,int rp,String o,String e){
+		hotelid = id;
 		address=a;
 		bussiness_address=ba;
 		name=na;
@@ -28,7 +30,9 @@ public class HotelPO implements Serializable{
 		order=o;
 		evaluation=e;
 	}
-	
+	public int getid(){
+		return hotelid;
+	}
 	public String getaddress(){
 		return address;
 	}

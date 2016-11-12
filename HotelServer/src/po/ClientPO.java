@@ -3,6 +3,7 @@ package po;
 import java.io.Serializable;
 
 public class ClientPO implements Serializable{
+	int clientid;
 	String name;
 	String contact;
 	int credit;
@@ -15,7 +16,8 @@ public class ClientPO implements Serializable{
 	
 	
 	
-	public ClientPO(String n,String c,int c1,String cr,int m,String mt,String b,String co){
+	public ClientPO(int id,String n,String c,int c1,String cr,int m,String mt,String b,String co){
+		clientid=id;
 		name=n;
 		contact=c;
 		credit=c1;
@@ -24,6 +26,9 @@ public class ClientPO implements Serializable{
 		member_type=mt;
 		birthday=b;
 		company=co;
+	}
+	public int getid(){
+		return clientid;
 	}
 	public String getname(){
 		return name;

@@ -2,6 +2,7 @@ package vo;
 
 
 public class HotelVO {
+	int hotelid;
 	String address;
 	String business_address;
 	String name;
@@ -14,7 +15,8 @@ public class HotelVO {
 	String order;
 	String evaluation;
 	
-	public HotelVO(String a,String ba,String na,String in,String s,String rs,String rt,int rn,int rp,String o,String e){
+	public HotelVO(int id,String a,String ba,String na,String in,String s,String rs,String rt,int rn,int rp,String o,String e){
+		hotelid = id;
 		address=a;
 		business_address=ba;
 		name=na;
@@ -26,6 +28,9 @@ public class HotelVO {
 		room_price=rp;
 		order=o;
 		evaluation=e;
+	}
+	public int getid(){
+		return hotelid;
 	}
 	public String getaddress(){
 		return address;

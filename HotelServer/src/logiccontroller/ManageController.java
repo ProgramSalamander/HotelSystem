@@ -29,15 +29,15 @@ public class ManageController implements ManageBLService{
 		//网站管理人员搜索客户，查看客户信息
 		public ClientVO manage_searchClient(int client_id){
 			// TODO Auto-generated method stub
-			return new ClientVO(client_name,client_contact,client_credit,credit_record,client_memberid,
+			return new ClientVO(1,client_name,client_contact,client_credit,credit_record,client_memberid,
 					client_member_type,client_birthday,client_company);
 		}
 
 		@Override
 		//网站管理人员更新客户信息
-		public ResultMessage manage_updateClient(int client_id) {
+		public ResultMessage manage_updateClient(ClientVO clientvo) {
 			// TODO Auto-generated method stub
-			if(client_id==1)
+			if(clientvo.getid()==1)
 				return ResultMessage.Success;
 			else return ResultMessage.Fail;
 		}
@@ -56,31 +56,35 @@ public class ManageController implements ManageBLService{
 		//网站管理人员搜索网站营销人员
 		public WebMarketVO manage_searchMarketWorker(int marketWorker_id) {
 			// TODO Auto-generated method stub
-			return new WebMarketVO(MarketWorker_name,MarketWorker_contact);
+			return new WebMarketVO(1,MarketWorker_name,MarketWorker_contact);
 		}
 
 		
 
 		@Override
-		public ResultMessage manage_addHotel(int hotelid) {
+		//网站管理人员添加酒店
+		public ResultMessage manage_addHotel(HotelVO hotelvo) {
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
-		public ResultMessage manage_addHotelWorker(int hotelid, HotelWorkerVO w) {
+		//网站管理人员添加酒店工作人员
+		public ResultMessage manage_addHotelWorker(HotelWorkerVO w) {
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
+		//网站管理人员搜索酒店工作人员
 		public HotelWorkerVO manage_searchHotelWorker(int hotelid) {
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
-		public ResultMessage manage_updateHotelWorker(int hotelid) {
+		//网站管理人员更新酒店工作人员信息
+		public ResultMessage manage_updateHotelWorker(HotelWorkerVO hotelworkervo) {
 			// TODO Auto-generated method stub
 			return null;
 		}

@@ -31,7 +31,7 @@ public class ClientController implements ClientBLService{
 		String evaluation="нч";
 		
 	public ClientVO client_checkInfo(int clientid){
-		ClientVO client=new ClientVO(client_name,contact,credit,credit_record,memberid,member_type,birthday,company);
+		ClientVO client=new ClientVO(1,client_name,contact,credit,credit_record,memberid,member_type,birthday,company);
 		return client;		
 	}
 	
@@ -46,7 +46,7 @@ public class ClientController implements ClientBLService{
 	
 	public ArrayList<HotelVO> client_getpreviousHotelList(int clientid){
 		ArrayList<HotelVO> HotelList_Client=new ArrayList<HotelVO>();
-		HotelVO hotel=new HotelVO(address,business_address,hotel_name,introduction,service,room_state,room_type,room_number,room_price,order,evaluation);
+		HotelVO hotel=new HotelVO(1,address,business_address,hotel_name,introduction,service,room_state,room_type,room_number,room_price,order,evaluation);
 		HotelList_Client.add(hotel);
 		return HotelList_Client;
 	}
@@ -56,7 +56,7 @@ public class ClientController implements ClientBLService{
 
 	public ArrayList<HotelVO> client_setLocation(String location) {
 		ArrayList<HotelVO> HotelList_Client=new ArrayList<HotelVO>();
-		HotelVO hotel=new HotelVO(address,business_address,hotel_name,introduction,service,room_state,room_type,room_number,room_price,order,evaluation);
+		HotelVO hotel=new HotelVO(1,address,business_address,hotel_name,introduction,service,room_state,room_type,room_number,room_price,order,evaluation);
 		HotelList_Client.add(hotel);
 		return HotelList_Client;
 	}
@@ -64,14 +64,14 @@ public class ClientController implements ClientBLService{
 
 	public ArrayList<HotelVO> client_searchHotel(String hotelname) {
 		ArrayList<HotelVO> HotelList_Client=new ArrayList<HotelVO>();
-		HotelVO hotel=new HotelVO(address,business_address,hotel_name,introduction,service,room_state,room_type,room_number,room_price,order,evaluation);
+		HotelVO hotel=new HotelVO(1,address,business_address,hotel_name,introduction,service,room_state,room_type,room_number,room_price,order,evaluation);
 		HotelList_Client.add(hotel);
 		return HotelList_Client;
 	}
 
 
 	public HotelVO client_checkHotelInfo(int hotelid) {
-		HotelVO hotel=new HotelVO(address,business_address,hotel_name,introduction,service,room_state,room_type,room_number,room_price,order,evaluation);
+		HotelVO hotel=new HotelVO(1,address,business_address,hotel_name,introduction,service,room_state,room_type,room_number,room_price,order,evaluation);
 		return hotel;
 	}
 

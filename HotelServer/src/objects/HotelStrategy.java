@@ -1,9 +1,6 @@
 package objects;
 
 public class HotelStrategy {
-<<<<<<< HEAD
-
-=======
 /*	private String name;
 	private String condition;
 	private String start_time;
@@ -62,5 +59,4 @@ public class HotelStrategy {
 		return superposition;
 	}
 	*/
->>>>>>> origin/master
 }

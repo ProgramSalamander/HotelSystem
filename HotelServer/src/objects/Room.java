@@ -1,9 +1,7 @@
 package objects;
 
 public class Room {
-<<<<<<< HEAD
 
-=======
 /*	String room_type;
 	String room_price;
 	int room_number;
@@ -34,5 +32,4 @@ public class Room {
 		return check_out_date;
 	}
 	*/
->>>>>>> origin/master
 }

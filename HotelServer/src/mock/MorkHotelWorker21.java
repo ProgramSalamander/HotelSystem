@@ -1,4 +1,4 @@
-package mork;
+package mock;
 
 import objects.HotelWorker;
 import vo.HotelWorkerVO;

@@ -4,9 +4,9 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import mork.MorkClient21;
-import mork.MorkHotel21;
-import mork.MorkWebMarket21;
+import mock.MorkClient21;
+import mock.MorkHotel21;
+import mock.MorkWebMarket21;
 import objects.ResultMessage;
 import service.blservice.Impl.ManageBLServiceImpl;
 import vo.ClientVO;

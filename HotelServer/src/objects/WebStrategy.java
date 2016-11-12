@@ -1,8 +1,7 @@
 package objects;
 
 public class WebStrategy {
-<<<<<<< HEAD
-=======
+
 /*	private String name;
 	private String condition;
 	private String start_time;
@@ -62,6 +61,4 @@ public class WebStrategy {
 	}
 	*/
 }
->>>>>>> origin/master
 
-}

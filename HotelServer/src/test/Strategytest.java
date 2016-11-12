@@ -43,31 +43,31 @@ public class Strategytest {
 	
 	@Test
 	public void testisHotelstrategy_make(){
-		HotelStrategy hs=new HotelStrategy("开业酬宾","无","2016-10-14-0:00","2016-10-20-0:00","九折",false);
+		HotelStrategy hs=new HotelStrategy();
 		assertEquals(ResultMessage.Success,strategyContro.hotelstrategy_make(hs));
 	}
 	
 	@Test
 	public void testisHotelstrategy_update(){
-		HotelStrategy hs=new HotelStrategy("开业酬宾","无","2016-10-14-0:00","2016-10-20-0:00","八折",false);
+		HotelStrategy hs=new HotelStrategy();
 		assertEquals(ResultMessage.Success,strategyContro.hotelstrategy_update(hs));
 	}
 	
 	@Test
 	public void testisWebstrategy_make(){
-		WebStrategy ws=new WebStrategy("开业酬宾","无","2016-10-14-0:00","2016-10-20-0:00","九折",false);
+		WebStrategy ws=new WebStrategy();
 		assertEquals(ResultMessage.Success,strategyContro.webstrategy_make(ws));
 	}
 	
 	@Test
 	public void testisWebstrategy_update(){
-		WebStrategy ws=new WebStrategy("开业酬宾","无","2016-10-14-0:00","2016-10-20-0:00","八折",false);
+		WebStrategy ws=new WebStrategy();
 		assertEquals(ResultMessage.Success,strategyContro.webstrategy_update(ws));
 	}
 	
 	@Test
 	public void testgetHotelStrategy(){
-		HotelStrategy hs=new HotelStrategy("开业酬宾","无","2016-10-14-0:00","2016-10-20-0:00","九折",false);
+		HotelStrategy hs=new HotelStrategy();
 		ArrayList<HotelStrategy> hotelStrategy = new ArrayList<HotelStrategy>();
 		hotelStrategy.add(hs);
 		MockClient1 client  = new MockClient1(2);
@@ -77,7 +77,7 @@ public class Strategytest {
 	
 	@Test
 	public void testgetWebStrategy(){
-		WebStrategy ws=new WebStrategy("开业酬宾","无","2016-10-14-0:00","2016-10-20-0:00","九折",false);
+		WebStrategy ws=new WebStrategy();
 		ArrayList<WebStrategy> webStrategy = new ArrayList<WebStrategy>();
 		webStrategy.add(ws);
 		MockClient1 client  = new MockClient1(2);

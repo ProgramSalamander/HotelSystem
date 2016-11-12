@@ -2,9 +2,9 @@ package mork;
 
 import objects.Client;
 
-public class MorkClient11 extends Client{
+public class MorkClient21 extends Client{
 	int clientid;
-	public MorkClient11(int id){
+	public MorkClient21(int id){
 		clientid = id;
 	}
 	public int getid(){

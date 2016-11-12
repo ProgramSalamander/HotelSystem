@@ -3,11 +3,11 @@ package mork;
 import objects.HotelWorker;
 import vo.HotelWorkerVO;
 
-public class MorkHotelWorker11 extends HotelWorker {
+public class MorkHotelWorker21 extends HotelWorker {
 	int hotelid;
 	HotelWorkerVO w;
 	
-	public MorkHotelWorker11(int id,HotelWorkerVO hwvo){
+	public MorkHotelWorker21(int id,HotelWorkerVO hwvo){
 		hotelid = id;
 		w = hwvo;
 	}

@@ -4,9 +4,9 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import mork.MorkClient11;
-import mork.MorkHotel11;
-import mork.MorkWebMarket11;
+import mork.MorkClient21;
+import mork.MorkHotel21;
+import mork.MorkWebMarket21;
 import objects.ResultMessage;
 import service.blservice.Impl.ManageBLServiceImpl;
 import vo.ClientVO;
@@ -20,7 +20,7 @@ public class Managetest {
 	 */
 	@Test
 	public void testmanage_searchClient(){
-		MorkClient11 client1 = new MorkClient11(1);
+		MorkClient21 client1 = new MorkClient21(1);
 		ManageBLServiceImpl mserviceimpl = new ManageBLServiceImpl();
 		ClientVO clientvo = mserviceimpl.manage_searchClient(client1.getid());
 		
@@ -70,7 +70,7 @@ public class Managetest {
 	 */
 	@Test
 	public void testmanage_searchHotelWorker(){
-		MorkHotel11 hotel1 = new MorkHotel11(100012);
+		MorkHotel21 hotel1 = new MorkHotel21(100012);
 		ManageBLServiceImpl mserviceimpl = new ManageBLServiceImpl();
 		HotelWorkerVO hotelworkerpo = mserviceimpl.manage_searchHotelWorker(hotel1.getid());
 		
@@ -108,7 +108,7 @@ public class Managetest {
 	 */
 	@Test
 	public void testmanage_searchMarketWorker(){
-		MorkWebMarket11 webmarket = new MorkWebMarket11(1,"1","1");
+		MorkWebMarket21 webmarket = new MorkWebMarket21(1,"1","1");
 		ManageBLServiceImpl mserviceimpl = new ManageBLServiceImpl();
 		WebMarketVO webmarketvo =  mserviceimpl.manage_searchMarketWorker(webmarket.getid());
 		

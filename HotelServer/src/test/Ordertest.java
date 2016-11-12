@@ -20,7 +20,7 @@ import objects.WebStrategy;
 import service.blservice.Impl.OrderBLServiceImpl;
 import vo.OrderVO;
 
-public class Ordertset {
+public class Ordertest {
 
 	@Test
 	public void testorder_client_browse1(){

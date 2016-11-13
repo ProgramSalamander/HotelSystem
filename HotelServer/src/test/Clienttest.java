@@ -17,13 +17,13 @@ import vo.HotelVO;
 import mock.*;
 
 public class Clienttest {
-	// ²âÊÔÌá¹©¸ø½çÃæµÄ½Ó¿Ú
+	// æµ‹è¯•æä¾›ç»™ç•Œé¢çš„æ¥å£
 	@Test
 	public void client_checkInfoTest() {
 		ClientBLService clientcontroller = new ClientBLServiceImpl();
 		ArrayList<String> credit_record = new ArrayList<String>();
 		VIPInfo info = new VIPInfo(VIPType.NORMAL, 1, "2000/01/01");
-		ClientVO vo = new ClientVO(1, "ÕÅÈı", "11111111111", 0, credit_record, info);
+		ClientVO vo = new ClientVO(1, "å¼ ä¸‰", "11111111111", 0, credit_record, info);
 		Assert.assertEquals(vo, clientcontroller.client_checkInfo(1));
 	}
 
@@ -32,7 +32,7 @@ public class Clienttest {
 		ClientBLService clientcontroller = new ClientBLServiceImpl();
 		ArrayList<String> credit_record = new ArrayList<String>();
 		VIPInfo info = new VIPInfo(VIPType.NORMAL, 1, "2000/01/01");
-		ClientVO vo = new ClientVO(1, "ÕÅÈı", "11111111111", 0, credit_record, info);
+		ClientVO vo = new ClientVO(1, "å¼ ä¸‰", "11111111111", 0, credit_record, info);
 		Assert.assertEquals(ResultMessage.Success, clientcontroller.client_updateInfo(vo));
 	}
 
@@ -40,7 +40,7 @@ public class Clienttest {
 	public void client_getpreviousHotelListTest() {
 		ClientBLService clientcontroller = new ClientBLServiceImpl();
 		ArrayList<HotelVO> HotelList_Client = new ArrayList<HotelVO>();
-		HotelVO hotel = new HotelVO("ÄÏ¾©", "ĞÂ½Ö¿Ú", "Èç¼Ò", "Èç¼Ò¾Æµê", "¾ÆµêËùÓĞ·şÎñ", "¿ÉÓÃ", "Ë«ÈË·¿", 1, 100, "", "good");
+		HotelVO hotel = new HotelVO("å—äº¬", "æ–°è¡—å£", "å¦‚å®¶", "å¦‚å®¶é…’åº—", "é…’åº—æ‰€æœ‰æœåŠ¡", "å¯ç”¨", "åŒäººæˆ¿", 1, 100, "", "good");
 		HotelList_Client.add(hotel);
 		Assert.assertEquals(HotelList_Client, clientcontroller.client_getpreviousHotelList(1));
 	}
@@ -48,9 +48,9 @@ public class Clienttest {
 	@Test
 	public void client_setLocationTest() {
 		ClientBLService clientcontroller = new ClientBLServiceImpl();
-		MockHotel30 hotel30 = new MockHotel30("ÄÏ¾©");
+		MockHotel30 hotel30 = new MockHotel30("å—äº¬");
 		ArrayList<HotelVO> HotelList_Client = new ArrayList<HotelVO>();
-		HotelVO hotel = new HotelVO("ÄÏ¾©", "ĞÂ½Ö¿Ú", "Èç¼Ò", "Èç¼Ò¾Æµê", "¾ÆµêËùÓĞ·şÎñ", "¿ÉÓÃ", "Ë«ÈË·¿", 1, 100, "", "good");
+		HotelVO hotel = new HotelVO("å—äº¬", "æ–°è¡—å£", "å¦‚å®¶", "å¦‚å®¶é…’åº—", "é…’åº—æ‰€æœ‰æœåŠ¡", "å¯ç”¨", "åŒäººæˆ¿", 1, 100, "", "good");
 		HotelList_Client.add(hotel);
 		Assert.assertEquals(HotelList_Client, clientcontroller.client_setLocation(hotel30.getLocation()));
 	}
@@ -58,9 +58,9 @@ public class Clienttest {
 	@Test
 	public void client_searchHotelTest1() {
 		ClientBLService clientcontroller = new ClientBLServiceImpl();
-		MockHotel31 hotel31 = new MockHotel31("Èç¼Ò");
+		MockHotel31 hotel31 = new MockHotel31("å¦‚å®¶");
 		ArrayList<HotelVO> HotelList_Client = new ArrayList<HotelVO>();
-		HotelVO hotel = new HotelVO("ÄÏ¾©", "ĞÂ½Ö¿Ú", "Èç¼Ò", "Èç¼Ò¾Æµê", "¾ÆµêËùÓĞ·şÎñ", "¿ÉÓÃ", "Ë«ÈË·¿", 1, 100, "", "good");
+		HotelVO hotel = new HotelVO("å—äº¬", "æ–°è¡—å£", "å¦‚å®¶", "å¦‚å®¶é…’åº—", "é…’åº—æ‰€æœ‰æœåŠ¡", "å¯ç”¨", "åŒäººæˆ¿", 1, 100, "", "good");
 		HotelList_Client.add(hotel);
 		Assert.assertEquals(HotelList_Client, clientcontroller.client_searchHotel(hotel31.getHotelname()));
 	}
@@ -70,7 +70,7 @@ public class Clienttest {
 		ClientBLService clientcontroller = new ClientBLServiceImpl();
 		MockHotel32 hotel32 = new MockHotel32(RoomType.DOUBLEROOM);
 		ArrayList<HotelVO> HotelList_Client = new ArrayList<HotelVO>();
-		HotelVO hotel = new HotelVO("ÄÏ¾©", "ĞÂ½Ö¿Ú", "Èç¼Ò", "Èç¼Ò¾Æµê", "¾ÆµêËùÓĞ·şÎñ", "¿ÉÓÃ", "Ë«ÈË·¿", 1, 100, "", "good");
+		HotelVO hotel = new HotelVO("å—äº¬", "æ–°è¡—å£", "å¦‚å®¶", "å¦‚å®¶é…’åº—", "é…’åº—æ‰€æœ‰æœåŠ¡", "å¯ç”¨", "åŒäººæˆ¿", 1, 100, "", "good");
 		HotelList_Client.add(hotel);
 		Assert.assertEquals(HotelList_Client, clientcontroller.client_searchHotel(hotel32.getType()));
 	}
@@ -80,7 +80,7 @@ public class Clienttest {
 		ClientBLService clientcontroller = new ClientBLServiceImpl();
 		MockHotel33 hotel33 = new MockHotel33(100, 200);
 		ArrayList<HotelVO> HotelList_Client = new ArrayList<HotelVO>();
-		HotelVO hotel = new HotelVO("ÄÏ¾©", "ĞÂ½Ö¿Ú", "Èç¼Ò", "Èç¼Ò¾Æµê", "¾ÆµêËùÓĞ·şÎñ", "¿ÉÓÃ", "Ë«ÈË·¿", 1, 100, "", "good");
+		HotelVO hotel = new HotelVO("å—äº¬", "æ–°è¡—å£", "å¦‚å®¶", "å¦‚å®¶é…’åº—", "é…’åº—æ‰€æœ‰æœåŠ¡", "å¯ç”¨", "åŒäººæˆ¿", 1, 100, "", "good");
 		HotelList_Client.add(hotel);
 		Assert.assertEquals(HotelList_Client,
 				clientcontroller.client_searchHotel(hotel33.getLowprice(), hotel33.getHighprice()));
@@ -91,7 +91,7 @@ public class Clienttest {
 		ClientBLService clientcontroller = new ClientBLServiceImpl();
 		MockHotel34 hotel34 = new MockHotel34("2001/01/01", "2001/01/03");
 		ArrayList<HotelVO> HotelList_Client = new ArrayList<HotelVO>();
-		HotelVO hotel = new HotelVO("ÄÏ¾©", "ĞÂ½Ö¿Ú", "Èç¼Ò", "Èç¼Ò¾Æµê", "¾ÆµêËùÓĞ·şÎñ", "¿ÉÓÃ", "Ë«ÈË·¿", 1, 100, "", "good");
+		HotelVO hotel = new HotelVO("å—äº¬", "æ–°è¡—å£", "å¦‚å®¶", "å¦‚å®¶é…’åº—", "é…’åº—æ‰€æœ‰æœåŠ¡", "å¯ç”¨", "åŒäººæˆ¿", 1, 100, "", "good");
 		HotelList_Client.add(hotel);
 		Assert.assertEquals(HotelList_Client,
 				clientcontroller.client_searchHotel(hotel34.getInTime(), hotel34.getLeaveTime()));
@@ -102,7 +102,7 @@ public class Clienttest {
 		ClientBLService clientcontroller = new ClientBLServiceImpl();
 		MockHotel35 hotel35 = new MockHotel35(1);
 		ArrayList<HotelVO> HotelList_Client = new ArrayList<HotelVO>();
-		HotelVO hotel = new HotelVO("ÄÏ¾©", "ĞÂ½Ö¿Ú", "Èç¼Ò", "Èç¼Ò¾Æµê", "¾ÆµêËùÓĞ·şÎñ", "¿ÉÓÃ", "Ë«ÈË·¿", 1, 100, "", "good");
+		HotelVO hotel = new HotelVO("å—äº¬", "æ–°è¡—å£", "å¦‚å®¶", "å¦‚å®¶é…’åº—", "é…’åº—æ‰€æœ‰æœåŠ¡", "å¯ç”¨", "åŒäººæˆ¿", 1, 100, "", "good");
 		HotelList_Client.add(hotel);
 		Assert.assertEquals(HotelList_Client, clientcontroller.client_searchHotel(hotel35.getStar()));
 	}
@@ -112,7 +112,7 @@ public class Clienttest {
 		ClientBLService clientcontroller = new ClientBLServiceImpl();
 		MockHotel36 hotel36 = new MockHotel36(4.0, 5.0);
 		ArrayList<HotelVO> HotelList_Client = new ArrayList<HotelVO>();
-		HotelVO hotel = new HotelVO("ÄÏ¾©", "ĞÂ½Ö¿Ú", "Èç¼Ò", "Èç¼Ò¾Æµê", "¾ÆµêËùÓĞ·şÎñ", "¿ÉÓÃ", "Ë«ÈË·¿", 1, 100, "", "good");
+		HotelVO hotel = new HotelVO("å—äº¬", "æ–°è¡—å£", "å¦‚å®¶", "å¦‚å®¶é…’åº—", "é…’åº—æ‰€æœ‰æœåŠ¡", "å¯ç”¨", "åŒäººæˆ¿", 1, 100, "", "good");
 		HotelList_Client.add(hotel);
 		Assert.assertEquals(HotelList_Client,
 				clientcontroller.client_searchHotel(hotel36.getLowscore(), hotel36.getHighscore()));
@@ -121,7 +121,7 @@ public class Clienttest {
 	@Test
 	public void client_checkHotelInfoTest() {
 		ClientBLService clientcontroller = new ClientBLServiceImpl();
-		HotelVO hotel = new HotelVO("ÄÏ¾©", "ĞÂ½Ö¿Ú", "Èç¼Ò", "Èç¼Ò¾Æµê", "¾ÆµêËùÓĞ·şÎñ", "¿ÉÓÃ", "Ë«ÈË·¿", 1, 100, "", "good");
+		HotelVO hotel = new HotelVO("å—äº¬", "æ–°è¡—å£", "å¦‚å®¶", "å¦‚å®¶é…’åº—", "é…’åº—æ‰€æœ‰æœåŠ¡", "å¯ç”¨", "åŒäººæˆ¿", 1, 100, "", "good");
 		Assert.assertEquals(hotel, clientcontroller.client_checkHotelInfo(1));
 	}
 
@@ -156,7 +156,7 @@ public class Clienttest {
 		Assert.assertEquals(ResultMessage.Success, clientcontroller.client_enrollVIP(info, client30.getId()));
 	}
 
-	// ²âÊÔÌá¹©¸øÍ¬²ãµÄ½Ó¿Ú
+	// æµ‹è¯•æä¾›ç»™åŒå±‚çš„æ¥å£
 	@Test
 	public void updateClientCreditTest() {
 		ClientBLService clientcontroller = new ClientBLServiceImpl();
@@ -177,3 +177,4 @@ public class Clienttest {
 		Assert.assertEquals(ResultMessage.Success, clientcontroller.updateClientInfo(client2));
 	}
 }
+

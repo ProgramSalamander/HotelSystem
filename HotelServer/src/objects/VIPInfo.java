@@ -18,4 +18,36 @@ public class VIPInfo {
 		else
 			enterpriseName = info;
 	}
+
+	public VIPType getType() {
+		return type;
+	}
+
+	public void setType(VIPType type) {
+		this.type = type;
+	}
+
+	public int getVIPid() {
+		return VIPid;
+	}
+
+	public void setVIPid(int vIPid) {
+		VIPid = vIPid;
+	}
+
+	public String getBirthday() {
+		return birthday;
+	}
+
+	public void setBirthday(String birthday) {
+		this.birthday = birthday;
+	}
+
+	public String getEnterpriseName() {
+		return enterpriseName;
+	}
+
+	public void setEnterpriseName(String enterpriseName) {
+		this.enterpriseName = enterpriseName;
+	}
 }

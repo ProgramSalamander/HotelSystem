@@ -45,7 +45,7 @@ public class ClientController implements ClientBLService {
 
 	public ArrayList<HotelVO> client_getpreviousHotelList(int clientid) {
 		ArrayList<HotelVO> HotelList_Client = new ArrayList<HotelVO>();
-		HotelVO hotel = new HotelVO(address, business_address, hotel_name, introduction, service, room_state, room_type,
+		HotelVO hotel = new HotelVO(1,address, business_address, hotel_name, introduction, service, room_state, room_type,
 				room_number, room_price, order, evaluation);
 		HotelList_Client.add(hotel);
 		return HotelList_Client;
@@ -53,7 +53,7 @@ public class ClientController implements ClientBLService {
 
 	public ArrayList<HotelVO> client_setLocation(String location) {
 		ArrayList<HotelVO> HotelList_Client = new ArrayList<HotelVO>();
-		HotelVO hotel = new HotelVO(address, business_address, hotel_name, introduction, service, room_state, room_type,
+		HotelVO hotel = new HotelVO(1,address, business_address, hotel_name, introduction, service, room_state, room_type,
 				room_number, room_price, order, evaluation);
 		HotelList_Client.add(hotel);
 		return HotelList_Client;
@@ -61,14 +61,14 @@ public class ClientController implements ClientBLService {
 
 	public ArrayList<HotelVO> client_searchHotel(String hotelname) {
 		ArrayList<HotelVO> HotelList_Client = new ArrayList<HotelVO>();
-		HotelVO hotel = new HotelVO(address, business_address, hotel_name, introduction, service, room_state, room_type,
+		HotelVO hotel = new HotelVO(1,address, business_address, hotel_name, introduction, service, room_state, room_type,
 				room_number, room_price, order, evaluation);
 		HotelList_Client.add(hotel);
 		return HotelList_Client;
 	}
 
 	public HotelVO client_checkHotelInfo(int hotelid) {
-		HotelVO hotel = new HotelVO(address, business_address, hotel_name, introduction, service, room_state, room_type,
+		HotelVO hotel = new HotelVO(1,address, business_address, hotel_name, introduction, service, room_state, room_type,
 				room_number, room_price, order, evaluation);
 		return hotel;
 	}
@@ -86,7 +86,7 @@ public class ClientController implements ClientBLService {
 	@Override
 	public ArrayList<HotelVO> client_searchHotel(RoomType type) {
 		ArrayList<HotelVO> HotelList_Client = new ArrayList<HotelVO>();
-		HotelVO hotel = new HotelVO(address, business_address, hotel_name, introduction, service, room_state, room_type,
+		HotelVO hotel = new HotelVO(1,address, business_address, hotel_name, introduction, service, room_state, room_type,
 				room_number, room_price, order, evaluation);
 		HotelList_Client.add(hotel);
 		return HotelList_Client;
@@ -95,7 +95,7 @@ public class ClientController implements ClientBLService {
 	@Override
 	public ArrayList<HotelVO> client_searchHotel(int lowprice, int highprice) {
 		ArrayList<HotelVO> HotelList_Client = new ArrayList<HotelVO>();
-		HotelVO hotel = new HotelVO(address, business_address, hotel_name, introduction, service, room_state, room_type,
+		HotelVO hotel = new HotelVO(1,address, business_address, hotel_name, introduction, service, room_state, room_type,
 				room_number, room_price, order, evaluation);
 		HotelList_Client.add(hotel);
 		return HotelList_Client;
@@ -104,7 +104,7 @@ public class ClientController implements ClientBLService {
 	@Override
 	public ArrayList<HotelVO> client_searchHotel(String inTime, String leaveTime) {
 		ArrayList<HotelVO> HotelList_Client = new ArrayList<HotelVO>();
-		HotelVO hotel = new HotelVO(address, business_address, hotel_name, introduction, service, room_state, room_type,
+		HotelVO hotel = new HotelVO(1,address, business_address, hotel_name, introduction, service, room_state, room_type,
 				room_number, room_price, order, evaluation);
 		HotelList_Client.add(hotel);
 		return HotelList_Client;
@@ -113,7 +113,7 @@ public class ClientController implements ClientBLService {
 	@Override
 	public ArrayList<HotelVO> client_searchHotel(int star) {
 		ArrayList<HotelVO> HotelList_Client = new ArrayList<HotelVO>();
-		HotelVO hotel = new HotelVO(address, business_address, hotel_name, introduction, service, room_state, room_type,
+		HotelVO hotel = new HotelVO(1,address, business_address, hotel_name, introduction, service, room_state, room_type,
 				room_number, room_price, order, evaluation);
 		HotelList_Client.add(hotel);
 		return HotelList_Client;
@@ -122,7 +122,7 @@ public class ClientController implements ClientBLService {
 	@Override
 	public ArrayList<HotelVO> client_searchHotel(double lowscore, double highscore) {
 		ArrayList<HotelVO> HotelList_Client = new ArrayList<HotelVO>();
-		HotelVO hotel = new HotelVO(address, business_address, hotel_name, introduction, service, room_state, room_type,
+		HotelVO hotel = new HotelVO(1,address, business_address, hotel_name, introduction, service, room_state, room_type,
 				room_number, room_price, order, evaluation);
 		HotelList_Client.add(hotel);
 		return HotelList_Client;

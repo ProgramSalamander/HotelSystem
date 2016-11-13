@@ -6,6 +6,7 @@ import vo.*;
 import service.*;
 import service.blservice.*;
 import objects.*;
+import objects.VIPInfo.VIPType;
 
 public class OrderBLService_driver {
 	public void drive(OrderBLService orderBLService){
@@ -70,7 +71,9 @@ public class OrderBLService_driver {
 //		System.out.println(order1.getexpect_number_of_people());
 		
 		//酒店工作人员执行订单
-		ClientVO c=new ClientVO(1,"Jack","11111111111",0,"无",000001,"个人会员","1997-1-1","无");
+		ArrayList<String> credit_record = new ArrayList<String>();
+		VIPInfo info = new VIPInfo(VIPType.NORMAL, 1, "2000/01/01");
+		ClientVO vo = new ClientVO(1, "张三", "11111111111", 0, credit_record, info);
 		ResultMessage result_hotel=orderBLService.order_hotel_execute(1);
 		if(result_hotel==ResultMessage.Success){
 			System.out.println("执行订单成功");

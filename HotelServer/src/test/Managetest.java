@@ -38,7 +38,7 @@ public class Managetest {
 		VIPInfo info = new VIPInfo(VIPType.NORMAL, 1, "2000/01/01");
 		ClientVO vo = new ClientVO(1, "уехЩ", "11111111111", 0, credit_record, info);
 		ManageBLServiceImpl mserviceimpl = new ManageBLServiceImpl();
-		ResultMessage result = mserviceimpl.manage_updateClient(vo.getClientid());
+		ResultMessage result = mserviceimpl.manage_updateClient(vo);
 		
 		assertEquals(ResultMessage.Success,result);
 	}

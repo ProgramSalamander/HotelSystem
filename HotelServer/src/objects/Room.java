@@ -6,7 +6,7 @@ public class Room {
 //	int room_number;
 //	String check_in_date;
 //	String check_out_date;
-//	
+	
 //	public Room(String rt,String rp,int rn,String checkin,String checkout){
 //		room_type = rt;
 //		room_price = rp;

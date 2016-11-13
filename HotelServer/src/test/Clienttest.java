@@ -40,7 +40,7 @@ public class Clienttest {
 	public void client_getpreviousHotelListTest() {
 		ClientBLService clientcontroller = new ClientBLServiceImpl();
 		ArrayList<HotelVO> HotelList_Client = new ArrayList<HotelVO>();
-		HotelVO hotel = new HotelVO("南京", "新街口", "如家", "如家酒店", "酒店所有服务", "可用", "双人房", 1, 100, "", "good");
+		HotelVO hotel = new HotelVO(1,"南京", "新街口", "如家", "如家酒店", "酒店所有服务", "可用", "双人房", 1, 100, "", "good");
 		HotelList_Client.add(hotel);
 		Assert.assertEquals(HotelList_Client, clientcontroller.client_getpreviousHotelList(1));
 	}
@@ -50,7 +50,7 @@ public class Clienttest {
 		ClientBLService clientcontroller = new ClientBLServiceImpl();
 		MockHotel30 hotel30 = new MockHotel30("南京");
 		ArrayList<HotelVO> HotelList_Client = new ArrayList<HotelVO>();
-		HotelVO hotel = new HotelVO("南京", "新街口", "如家", "如家酒店", "酒店所有服务", "可用", "双人房", 1, 100, "", "good");
+		HotelVO hotel = new HotelVO(1,"南京", "新街口", "如家", "如家酒店", "酒店所有服务", "可用", "双人房", 1, 100, "", "good");
 		HotelList_Client.add(hotel);
 		Assert.assertEquals(HotelList_Client, clientcontroller.client_setLocation(hotel30.getLocation()));
 	}
@@ -60,7 +60,7 @@ public class Clienttest {
 		ClientBLService clientcontroller = new ClientBLServiceImpl();
 		MockHotel31 hotel31 = new MockHotel31("如家");
 		ArrayList<HotelVO> HotelList_Client = new ArrayList<HotelVO>();
-		HotelVO hotel = new HotelVO("南京", "新街口", "如家", "如家酒店", "酒店所有服务", "可用", "双人房", 1, 100, "", "good");
+		HotelVO hotel = new HotelVO(1,"南京", "新街口", "如家", "如家酒店", "酒店所有服务", "可用", "双人房", 1, 100, "", "good");
 		HotelList_Client.add(hotel);
 		Assert.assertEquals(HotelList_Client, clientcontroller.client_searchHotel(hotel31.getHotelname()));
 	}
@@ -70,7 +70,7 @@ public class Clienttest {
 		ClientBLService clientcontroller = new ClientBLServiceImpl();
 		MockHotel32 hotel32 = new MockHotel32(RoomType.DOUBLEROOM);
 		ArrayList<HotelVO> HotelList_Client = new ArrayList<HotelVO>();
-		HotelVO hotel = new HotelVO("南京", "新街口", "如家", "如家酒店", "酒店所有服务", "可用", "双人房", 1, 100, "", "good");
+		HotelVO hotel = new HotelVO(1,"南京", "新街口", "如家", "如家酒店", "酒店所有服务", "可用", "双人房", 1, 100, "", "good");
 		HotelList_Client.add(hotel);
 		Assert.assertEquals(HotelList_Client, clientcontroller.client_searchHotel(hotel32.getType()));
 	}
@@ -80,7 +80,7 @@ public class Clienttest {
 		ClientBLService clientcontroller = new ClientBLServiceImpl();
 		MockHotel33 hotel33 = new MockHotel33(100, 200);
 		ArrayList<HotelVO> HotelList_Client = new ArrayList<HotelVO>();
-		HotelVO hotel = new HotelVO("南京", "新街口", "如家", "如家酒店", "酒店所有服务", "可用", "双人房", 1, 100, "", "good");
+		HotelVO hotel = new HotelVO(1,"南京", "新街口", "如家", "如家酒店", "酒店所有服务", "可用", "双人房", 1, 100, "", "good");
 		HotelList_Client.add(hotel);
 		Assert.assertEquals(HotelList_Client,
 				clientcontroller.client_searchHotel(hotel33.getLowprice(), hotel33.getHighprice()));
@@ -91,7 +91,7 @@ public class Clienttest {
 		ClientBLService clientcontroller = new ClientBLServiceImpl();
 		MockHotel34 hotel34 = new MockHotel34("2001/01/01", "2001/01/03");
 		ArrayList<HotelVO> HotelList_Client = new ArrayList<HotelVO>();
-		HotelVO hotel = new HotelVO("南京", "新街口", "如家", "如家酒店", "酒店所有服务", "可用", "双人房", 1, 100, "", "good");
+		HotelVO hotel = new HotelVO(1,"南京", "新街口", "如家", "如家酒店", "酒店所有服务", "可用", "双人房", 1, 100, "", "good");
 		HotelList_Client.add(hotel);
 		Assert.assertEquals(HotelList_Client,
 				clientcontroller.client_searchHotel(hotel34.getInTime(), hotel34.getLeaveTime()));
@@ -102,7 +102,7 @@ public class Clienttest {
 		ClientBLService clientcontroller = new ClientBLServiceImpl();
 		MockHotel35 hotel35 = new MockHotel35(1);
 		ArrayList<HotelVO> HotelList_Client = new ArrayList<HotelVO>();
-		HotelVO hotel = new HotelVO("南京", "新街口", "如家", "如家酒店", "酒店所有服务", "可用", "双人房", 1, 100, "", "good");
+		HotelVO hotel = new HotelVO(1,"南京", "新街口", "如家", "如家酒店", "酒店所有服务", "可用", "双人房", 1, 100, "", "good");
 		HotelList_Client.add(hotel);
 		Assert.assertEquals(HotelList_Client, clientcontroller.client_searchHotel(hotel35.getStar()));
 	}
@@ -112,7 +112,7 @@ public class Clienttest {
 		ClientBLService clientcontroller = new ClientBLServiceImpl();
 		MockHotel36 hotel36 = new MockHotel36(4.0, 5.0);
 		ArrayList<HotelVO> HotelList_Client = new ArrayList<HotelVO>();
-		HotelVO hotel = new HotelVO("南京", "新街口", "如家", "如家酒店", "酒店所有服务", "可用", "双人房", 1, 100, "", "good");
+		HotelVO hotel = new HotelVO(1,"南京", "新街口", "如家", "如家酒店", "酒店所有服务", "可用", "双人房", 1, 100, "", "good");
 		HotelList_Client.add(hotel);
 		Assert.assertEquals(HotelList_Client,
 				clientcontroller.client_searchHotel(hotel36.getLowscore(), hotel36.getHighscore()));
@@ -121,7 +121,7 @@ public class Clienttest {
 	@Test
 	public void client_checkHotelInfoTest() {
 		ClientBLService clientcontroller = new ClientBLServiceImpl();
-		HotelVO hotel = new HotelVO("南京", "新街口", "如家", "如家酒店", "酒店所有服务", "可用", "双人房", 1, 100, "", "good");
+		HotelVO hotel = new HotelVO(1,"南京", "新街口", "如家", "如家酒店", "酒店所有服务", "可用", "双人房", 1, 100, "", "good");
 		Assert.assertEquals(hotel, clientcontroller.client_checkHotelInfo(1));
 	}
 

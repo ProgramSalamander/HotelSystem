@@ -93,7 +93,7 @@ public class HotelController implements HotelBLService{
 		@Override
 		public HotelWorker searchHotelWorker(int hotelid) {
 			// TODO Auto-generated method stub
-			return new HotelWorker(hotelWorker_name,hotelWorker_contact,hotelWorker_hotel);
+			return new HotelWorker();
 		}
 
 		@Override

@@ -1,8 +1,8 @@
 package test;
 
-<<<<<<< HEAD:HotelServer/src/test/Ordertset.java
+
 public class Ordertset {
-=======
+
 import static org.junit.Assert.assertEquals;
 
 import java.util.ArrayList;
@@ -23,7 +23,6 @@ import objects.WebStrategy;
 import service.blservice.Impl.OrderBLServiceImpl;
 import vo.OrderVO;
 
-public class Ordertest {
->>>>>>> origin/master:HotelServer/src/test/Ordertest.java
+
 
 }

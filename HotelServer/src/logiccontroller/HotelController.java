@@ -2,6 +2,7 @@ package logiccontroller;
 
 
 import java.util.ArrayList;
+
 import vo.*;
 import service.blservice.*;
 import objects.*;
@@ -20,12 +21,10 @@ public class HotelController implements HotelBLService{
 		String hotel_order="无";
 		String hotel_evaluation="无";
 		
-
 	//酒店工作人员的信息参数
 		String hotelWorker_name="tom";
 		String hotelWorker_contact="11111111111";
 		String hotelWorker_hotel="如家";
-
 
 		@Override
 		//酒店工作人员更新酒店信息
@@ -40,73 +39,70 @@ public class HotelController implements HotelBLService{
 		@Override
 		public HotelVO hotel_checkInfo(int hotelid) {
 			// TODO Auto-generated method stub
-			return null;
+			return new HotelVO(hotel_address,hotel_business_address,hotel_name,hotel_introduction,hotel_service,
+					hotel_room_state,hotel_room_type,hotel_room_number,hotel_room_price,hotel_order,hotel_evaluation);
 		}
 
 		@Override
-		public ResultMessage hotel_importRoom(Room room) {
+		public ResultMessage hotel_importRoom(Room importroom) {
 			// TODO Auto-generated method stub
-			return null;
+			if(importroom!=null)
+				return ResultMessage.Success;
+			else return ResultMessage.Fail;
 		}
 
 		@Override
 		public ResultMessage hotel_updateAccomodation(AccommodationInfo info) {
 			// TODO Auto-generated method stub
-			return null;
+			if(info!=null)
+				return ResultMessage.Success;
+			else return ResultMessage.Fail;
 		}
 
 		@Override
 		public Hotel searchHotel(int hotelid) {
 			// TODO Auto-generated method stub
-
-			return null;
-
-			return new Hotel(hotel_address,hotel_business_address,hotel_name,hotel_introduction,hotel_service,
-					hotel_room_state,hotel_room_type,hotel_room_number,hotel_room_price,hotel_order,hotel_evaluation);
-
+			return new Hotel();
 		}
 
 		@Override
 		public ArrayList<Hotel> previousHotel(int clientid) {
 			// TODO Auto-generated method stub
-
-			return null;
-
 			ArrayList<Hotel> HotelList_Client=new ArrayList<Hotel>();
-			Hotel hotel=new Hotel(hotel_address,hotel_business_address,hotel_name,hotel_introduction,hotel_service,
-					hotel_room_state,hotel_room_type,hotel_room_number,hotel_room_price,hotel_order,hotel_evaluation);
+			Hotel hotel=new Hotel();
 			HotelList_Client.add(hotel);
 			return HotelList_Client;
-
 		}
 
 		@Override
 		public ResultMessage addHotel(Hotel hotel) {
 			// TODO Auto-generated method stub
-
-			return null;
-
 			if(hotel_name=="如家")
 				return ResultMessage.Success;
 			else return ResultMessage.Fail;
-
 		}
 
 		@Override
 		public ResultMessage addHotelWorker(HotelWorker worker) {
 			// TODO Auto-generated method stub
-			return null;
+			if(worker!=null)
+				return ResultMessage.Success;
+			else return ResultMessage.Fail;
 		}
 
 		@Override
 		public HotelWorker searchHotelWorker(int hotelid) {
 			// TODO Auto-generated method stub
-			return null;
+			return new HotelWorker(hotelWorker_name,hotelWorker_contact,hotelWorker_hotel);
 		}
 
 		@Override
 		public ResultMessage updateHotelWokerInfo(int hotelid, HotelWorker worker) {
 			// TODO Auto-generated method stub
-			return null;
+			if(hotelid!=0){
+				return ResultMessage.Success;
+			}
+			else
+				return ResultMessage.Fail;
 		}
 }

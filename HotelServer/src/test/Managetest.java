@@ -2,12 +2,14 @@ package test;
 
 import static org.junit.Assert.assertEquals;
 
+import java.util.ArrayList;
+
 import org.junit.Test;
 
-import mock.MorkClient21;
-import mock.MorkHotel21;
-import mock.MorkWebMarket21;
+import mock.*;
 import objects.ResultMessage;
+import objects.VIPInfo;
+import objects.VIPInfo.VIPType;
 import service.blservice.Impl.ManageBLServiceImpl;
 import vo.ClientVO;
 import vo.HotelVO;
@@ -20,7 +22,7 @@ public class Managetest {
 	 */
 	@Test
 	public void testmanage_searchClient(){
-		MorkClient21 client1 = new MorkClient21(1);
+		MockClient21 client1 = new MockClient21(1);
 		ManageBLServiceImpl mserviceimpl = new ManageBLServiceImpl();
 		ClientVO clientvo = mserviceimpl.manage_searchClient(client1.getid());
 		
@@ -32,9 +34,11 @@ public class Managetest {
 	 */
 	@Test
 	public void testmanage_updateClient(){
-		ClientVO clientvo = new ClientVO(1,"1","1",1,"1",1,"1","1","1");
+		ArrayList<String> credit_record = new ArrayList<String>();
+		VIPInfo info = new VIPInfo(VIPType.NORMAL, 1, "2000/01/01");
+		ClientVO vo = new ClientVO(1, "ÕÅÈý", "11111111111", 0, credit_record, info);
 		ManageBLServiceImpl mserviceimpl = new ManageBLServiceImpl();
-		ResultMessage result = mserviceimpl.manage_updateClient(clientvo);
+		ResultMessage result = mserviceimpl.manage_updateClient(vo.getClientid());
 		
 		assertEquals(ResultMessage.Success,result);
 	}

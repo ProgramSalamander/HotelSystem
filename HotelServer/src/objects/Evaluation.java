@@ -1,6 +1,10 @@
 package objects;
 
 public class Evaluation {
-	int score;
+	double score;
 	String comments;
+	public Evaluation(double score, String comments) {
+		this.score = score;
+		this.comments = comments;
+	}
 }

@@ -21,20 +21,20 @@ public class Hoteltest {
 	@Test
 	public void testhotel_checkInfo(){
 		HotelVO hotelVO = hotelContro.hotel_checkInfo(1);
-		HotelVO testHotel = new HotelVO("鍗椾含","鏂拌鍙�", "濡傚", "濡傚閰掑簵", "閰掑簵鎵�鏈夋湇鍔�", "鍙敤", "鍙屼汉鎴�", 1, 100, "", "good");
+		HotelVO testHotel = new HotelVO("南京","新街口", "如家", "如家酒店", "酒店所有服务", "可用", "双人房", 1, 100, "", "good");
 		
 		assertEquals(testHotel,hotelVO);
 	}
 	
 	@Test
 	public void testhotel_updateInfo(){
-		HotelVO testHotel = new HotelVO("鍗椾含","浠欐灄涓績", "濡傚", "濡傚閰掑簵", "閰掑簵鎵�鏈夋湇鍔�", "鍙敤", "鍙屼汉鎴�", 1, 100, "", "good");
+		HotelVO testHotel = new HotelVO("南京","仙林中心", "如家", "如家酒店", "酒店所有服务", "可用", "双人房", 1, 100, "", "good");
 		assertEquals(ResultMessage.Success,hotelContro.hotel_updateInfo(testHotel));
 	}
 	
 	@Test
 	public void testhotel_importRoom(){
-		Room importRoom = new Room("鍙屼汉鎴�","220",5,"2016-10-11","2016-11-1");
+		Room importRoom = new Room("双人房","220",5,"2016-10-11","2016-11-1");
 		assertEquals(ResultMessage.Success,hotelContro.hotel_importRoom(importRoom));
 	}
 	
@@ -68,20 +68,19 @@ public class Hoteltest {
 	
 	@Test
 	public void testaddHotelWorker(){
-		HotelWorker worker = new HotelWorker("寮犱笁","10000","濡傚");
+		HotelWorker worker = new HotelWorker("张三","10000","如家");
 		assertEquals(ResultMessage.Success,hotelContro.addHotelWorker(worker));
 	}
 	
 	@Test
 	public void testsearchHotelWorker(){
-		HotelWorker worker = new HotelWorker("寮犱笁","10000","濡傚");
+		HotelWorker worker = new HotelWorker("张三","10000","如家");
 		assertEquals(worker,hotelContro.searchHotelWorker(1));
 	}
 	
 	@Test
 	public void testupdateHotelWokerInfo(){
-		HotelWorker worker = new HotelWorker("寮犱笁","10110","濡傚");
+		HotelWorker worker = new HotelWorker("张三","10110","如家");
 		assertEquals(ResultMessage.Success,hotelContro.updateHotelWokerInfo(1, worker));
 	}
 }
-

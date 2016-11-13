@@ -1,4 +1,4 @@
- package objects;
+package objects;
 
 public class VIPInfo {
 	public enum VIPType {
@@ -19,4 +19,3 @@ public class VIPInfo {
 			enterpriseName = info;
 	}
 }
-

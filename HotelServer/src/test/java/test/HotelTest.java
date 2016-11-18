@@ -16,25 +16,25 @@ import objects.ResultMessage;
 import service.blservice.Impl.HotelBLServiceImpl;
 import vo.HotelVO;
 
-public class Hoteltest {
+public class HotelTest {
 	HotelBLServiceImpl hotelblImpl = new HotelBLServiceImpl();
 	@Test
 	public void testhotel_checkInfo(){
 		HotelVO hotelVO = hotelblImpl.hotel_checkInfo(1);
-		HotelVO testHotel = new HotelVO(1,"南京","新街口", "如家", "如家酒店", "酒店所有服务", "可用", "双人房", 1, 100, "", "good");
+		HotelVO testHotel = new HotelVO(1,"南京","新街�?", "如家", "如家酒店", "酒店�?有服�?", "可用", "双人�?", 1, 100, "", "good");
 		
 		assertEquals(testHotel,hotelVO);
 	}
 	
 	@Test
 	public void testhotel_updateInfo(){
-		HotelVO testHotel = new HotelVO(1,"南京","仙林中心", "如家", "如家酒店", "酒店所有服务", "可用", "双人房", 1, 100, "", "good");
+		HotelVO testHotel = new HotelVO(1,"南京","仙林中心", "如家", "如家酒店", "酒店�?有服�?", "可用", "双人�?", 1, 100, "", "good");
 		assertEquals(ResultMessage.Success,hotelblImpl.hotel_updateInfo(testHotel));
 	}
 	
 	@Test
 	public void testhotel_importRoom(){
-		MockRoom1 importRoom = new MockRoom1("双人房","220",5,"2016-10-11","2016-11-1");
+		MockRoom1 importRoom = new MockRoom1("双人�?","220",5,"2016-10-11","2016-11-1");
 		assertEquals(ResultMessage.Success,hotelblImpl.hotel_importRoom(importRoom));
 	}
 	

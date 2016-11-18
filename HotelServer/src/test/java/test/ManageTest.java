@@ -16,9 +16,9 @@ import vo.HotelVO;
 import vo.HotelWorkerVO;
 import vo.WebMarketVO;
 
-public class Managetest {
+public class ManageTest {
 	/**
-	 * ²âÊÔËÑË÷¿Í»§¡£
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í»ï¿½ï¿½ï¿½
 	 */
 	@Test
 	public void testmanage_searchClient(){
@@ -30,13 +30,13 @@ public class Managetest {
 	}
 	
 	/**
-	 * ²âÊÔ¸üĞÂ¿Í»§ĞÅÏ¢¡£
+	 * ï¿½ï¿½ï¿½Ô¸ï¿½ï¿½Â¿Í»ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½
 	 */
 	@Test
 	public void testmanage_updateClient(){
 		ArrayList<String> credit_record = new ArrayList<String>();
 		VIPInfo info = new VIPInfo(VIPType.NORMAL, 1, "2000/01/01");
-		ClientVO vo = new ClientVO(1, "ÕÅÈı", "11111111111", 0, credit_record, info);
+		ClientVO vo = new ClientVO(1, "ï¿½ï¿½ï¿½ï¿½", "11111111111", 0, credit_record, info);
 		ManageBLServiceImpl mserviceimpl = new ManageBLServiceImpl();
 		ResultMessage result = mserviceimpl.manage_updateClient(vo);
 		
@@ -44,7 +44,7 @@ public class Managetest {
 	}
 	
 	/**
-	 * ²âÊÔÌí¼Ó¾Æµê¡£
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¾Æµê¡£
 	 */
 	@Test
 	public void testmanage_addHotel(){
@@ -57,7 +57,7 @@ public class Managetest {
 	
 	
 	/**
-	 * ²âÊÔÌí¼Ó¾Æµê¹¤×÷ÈËÔ±¡£
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¾Æµê¹¤ï¿½ï¿½ï¿½ï¿½Ô±ï¿½ï¿½
 	 */
 	@Test
 	public void testmanage_addHotelWorker(){
@@ -70,7 +70,7 @@ public class Managetest {
 	
 	
 	/**
-	 * ²âÊÔËÑË÷¾Æµê¹¤×÷ÈËÔ±¡£
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµê¹¤ï¿½ï¿½ï¿½ï¿½Ô±ï¿½ï¿½
 	 */
 	@Test
 	public void testmanage_searchHotelWorker(){
@@ -82,7 +82,7 @@ public class Managetest {
 	}
 	
 	/**
-	 * ²âÊÔ¸üĞÂ¾Æµê¹¤×÷ÈËÔ±ĞÅÏ¢
+	 * ï¿½ï¿½ï¿½Ô¸ï¿½ï¿½Â¾Æµê¹¤ï¿½ï¿½ï¿½ï¿½Ô±ï¿½ï¿½Ï¢
 	 */
 	@Test
 	public void testmanage_updateHotelWorker(){
@@ -95,7 +95,7 @@ public class Managetest {
 	
 	
 	/**
-	 * ²âÊÔÌí¼ÓÍøÕ¾ÓªÏúÈËÔ±
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¾Óªï¿½ï¿½ï¿½ï¿½Ô±
 	 */
 	@Test
 	public void testmanage_addMarketWorker(){
@@ -108,7 +108,7 @@ public class Managetest {
 	
 	
 	/**
-	 * ²âÊÔËÑË÷ÍøÕ¾ÓªÏúÈËÔ± 
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¾Óªï¿½ï¿½ï¿½ï¿½Ô± 
 	 */
 	@Test
 	public void testmanage_searchMarketWorker(){
@@ -122,7 +122,7 @@ public class Managetest {
 	
 	
 	/**
-	 * ²âÊÔ¸üĞÂÍøÕ¾ÓªÏúÈËÔ±ĞÅÏ¢
+	 * ï¿½ï¿½ï¿½Ô¸ï¿½ï¿½ï¿½ï¿½ï¿½Õ¾Óªï¿½ï¿½ï¿½ï¿½Ô±ï¿½ï¿½Ï¢
 	 */
 	@Test
 	public void testmanage_updateMarketWorker(){

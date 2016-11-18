@@ -39,7 +39,7 @@ public class HotelController implements HotelBLService{
 		@Override
 		public HotelVO hotel_checkInfo(int hotelid) {
 			// TODO Auto-generated method stub
-			return new HotelVO(hotel_address,hotel_business_address,hotel_name,hotel_introduction,hotel_service,
+			return new HotelVO(hotelid,hotel_address,hotel_business_address,hotel_name,hotel_introduction,hotel_service,
 					hotel_room_state,hotel_room_type,hotel_room_number,hotel_room_price,hotel_order,hotel_evaluation);
 		}
 
@@ -93,7 +93,7 @@ public class HotelController implements HotelBLService{
 		@Override
 		public HotelWorker searchHotelWorker(int hotelid) {
 			// TODO Auto-generated method stub
-			return new HotelWorker(hotelWorker_name,hotelWorker_contact,hotelWorker_hotel);
+			return new HotelWorker();
 		}
 
 		@Override

@@ -4,7 +4,7 @@ public class HotelWorker {
 //	private String name;
 //	private String contact;
 //	private String hotel;
-//	
+	
 //	public HotelWorker(String n,String c,String h){
 //		this.name=n;
 //		this.contact=c;

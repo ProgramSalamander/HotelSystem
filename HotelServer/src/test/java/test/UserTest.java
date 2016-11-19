@@ -7,12 +7,12 @@ import org.junit.Test;
 import objects.ResultMessage;
 import service.blservice.Impl.UserBLServiceImpl;
 
-public class Usertest {
+public class UserTest {
 
 	@Test
 	public void testlogin(){
 		UserBLServiceImpl user=new UserBLServiceImpl();
-		String username="уехЩ";
+		String username="О©╫О©╫О©╫О©╫";
 		String password="123456";
 		ResultMessage login_result=user.login(username, password);
 		
@@ -22,7 +22,7 @@ public class Usertest {
 	@Test
 	public void testregistr(){
 		UserBLServiceImpl user=new UserBLServiceImpl();
-		String username="уехЩ";
+		String username="О©╫О©╫О©╫О©╫";
 		String password="123456";
 		ResultMessage register_result=user.register(username, password);
 		

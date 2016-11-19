@@ -3,7 +3,11 @@ package logiccontroller;
 
 import vo.*;
 import service.blservice.*;
+
+import java.util.ArrayList;
+
 import objects.*;
+import objects.VIPInfo.VIPType;
 
 public class ManageController implements ManageBLService{
 	//用户的信息参数
@@ -29,15 +33,17 @@ public class ManageController implements ManageBLService{
 		//网站管理人员搜索客户，查看客户信息
 		public ClientVO manage_searchClient(int client_id){
 			// TODO Auto-generated method stub
-			return new ClientVO(1,client_name,client_contact,client_credit,credit_record,client_memberid,
-					client_member_type,client_birthday,client_company);
+			ArrayList<String> credit_record = new ArrayList<String>();
+			VIPInfo info = new VIPInfo(VIPType.NORMAL, 1, "2000/01/01");
+			ClientVO vo = new ClientVO(1, "张三", "11111111111", 0, credit_record, info);
+			return vo;
 		}
 
 		@Override
 		//网站管理人员更新客户信息
 		public ResultMessage manage_updateClient(ClientVO clientvo) {
 			// TODO Auto-generated method stub
-			if(clientvo.getid()==1)
+			if(clientvo.getClientid()==1)
 				return ResultMessage.Success;
 			else return ResultMessage.Fail;
 		}

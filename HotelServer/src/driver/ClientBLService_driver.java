@@ -4,6 +4,7 @@ import vo.*;
 import service.*;
 import service.blservice.*;
 import objects.*;
+import objects.VIPInfo.VIPType;
 
 
 
@@ -13,16 +14,21 @@ public class ClientBLService_driver {
 		
 		//≤‚ ‘client_checkInfo
 		ClientVO vo = clientBLService.client_checkInfo(1);
-		System.out.println(vo.getname());
-		System.out.println(vo.getcontact());
-		System.out.println(vo.getcredit());
-		System.out.println(vo.getcredit_record());
-		System.out.println(vo.getmemberid());
-		System.out.println(vo.getmember_type());
-		if(vo.getmember_type().equals("PERSON"))
-			System.out.println(vo.getbirthday());
+		System.out.println(vo.getClient_name());
+		System.out.println(vo.getContact());
+		System.out.println(vo.getCredit());
+		ArrayList<String> list1 = vo.getCredit_record();
+		for(String s:list1){
+			System.out.println(list1);
+		}
+		VIPInfo info = vo.getInfo();
+		System.out.println(info.getVIPid());
+		System.out.println(info.getType());
+		if(info.getType()==VIPType.NORMAL){
+			System.out.println(info.getBirthday());
+		}
 		else
-			System.out.println(vo.getcompany());
+			System.out.println(info.getEnterpriseName());
 
 		//≤‚ ‘client_updateInfo
 		
@@ -79,7 +85,7 @@ public class ClientBLService_driver {
 		//°£°£°£
 
 		//≤‚ ‘client_evaluateHotel
-		Evaluation e=new Evaluation();
+		Evaluation e=new Evaluation(4.0,"good");
 		resultMessage = clientBLService.client_evaluateHotel(e,1);
 		if(resultMessage == ResultMessage.Success){
 			System.out.println("∆¿º€≥…π¶");
@@ -88,7 +94,7 @@ public class ClientBLService_driver {
 			System.out.println("∆¿º€ ß∞‹");
 
 		//≤‚ ‘client_enrollVIP
-		VIPInfo vip=new VIPInfo();
+		VIPInfo vip=new VIPInfo(VIPType.NORMAL,1,"2001/1/1");
  		resultMessage = clientBLService.client_enrollVIP(vip,1);
 		if(resultMessage == ResultMessage.Success)
 			System.out.println("◊¢≤·ª·‘±≥…π¶");

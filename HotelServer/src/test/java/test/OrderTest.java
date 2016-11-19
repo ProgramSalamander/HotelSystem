@@ -42,7 +42,7 @@ import vo.OrderVO;
 
 
 
-public class Ordertest {
+public class OrderTest {
 
 
 

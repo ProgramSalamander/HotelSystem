@@ -1,0 +1,17 @@
+.root{
+	
+	-fx-background-size: stretch stretch;
+    -fx-background-position: center center;
+}
+.button{
+	-fx-background-color:transparent ;
+	-fx-background-image:url(../../../../resources/loginbutton1.png);
+}
+
+.button:pressed{
+	-fx-background-image:url(../../../../resources/loginbutton4.png);
+}
+.label{
+	-fx-text-fill: black;
+}
+

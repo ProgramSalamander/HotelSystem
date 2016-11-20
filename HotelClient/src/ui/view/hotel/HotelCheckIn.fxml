@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane layoutX="-2.0" layoutY="-1.0" prefHeight="600.0" prefWidth="700.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="540.0" minHeight="10.0" prefHeight="540.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="295.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="114.0" text="入住" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="550.0" />
+               </GridPane.margin>
+            </Button>
+            <SplitPane dividerPositions="0.2825278810408922" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <GridPane prefHeight="149.0" prefWidth="698.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="344.0" minWidth="10.0" prefWidth="168.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="586.0" minWidth="10.0" prefWidth="186.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="586.0" minWidth="10.0" prefWidth="533.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="74.0" minHeight="2.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="98.0" minHeight="10.0" prefHeight="79.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label text="订单号：" GridPane.halignment="CENTER" />
+                              <Label text="房间号：" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                              <TextField GridPane.columnIndex="1" />
+                              <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <AnchorPane GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                 <children>
+                                    <Button layoutX="110.0" layoutY="-55.0" mnemonicParsing="false">
+                                       <graphic>
+                                          <ImageView fitHeight="103.0" fitWidth="109.0">
+                                             <image>
+                                                <Image url="@../搜索.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="383.0" prefWidth="688.0">
+                     <children>
+                        <TableView prefHeight="383.0" prefWidth="700.0">
+                          <columns>
+                            <TableColumn prefWidth="69.0" text="房间号" />
+                            <TableColumn prefWidth="109.0" text="订单号" />
+                              <TableColumn prefWidth="172.0" text="入住时间" />
+                              <TableColumn prefWidth="174.0" text="预计离开时间" />
+                              <TableColumn prefWidth="175.0" text="实际离开时间" />
+                          </columns>
+                        </TableView>
+                     </children></AnchorPane>
+              </items>
+            </SplitPane>
+            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="114.0" text="退房" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="360.0" />
+               </GridPane.margin>
+            </Button>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

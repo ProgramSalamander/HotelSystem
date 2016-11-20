@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="750.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <Label layoutX="174.0" layoutY="201.0" text="会员类型选择" />
+      <Label layoutX="174.0" layoutY="328.0" text="生日/所属企业" />
+      <ImageView fitHeight="115.0" fitWidth="145.0" layoutX="87.0" layoutY="21.0">
+         <image>
+            <Image url="@../会员.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="368.0" layoutY="58.0" text="注册会员">
+         <font>
+            <Font name="AR LisuGB Medium" size="32.0" />
+         </font>
+      </Label>
+      <RadioButton layoutX="341.0" layoutY="201.0" mnemonicParsing="false" text="普通会员" />
+      <RadioButton layoutX="509.0" layoutY="201.0" mnemonicParsing="false" text="企业会员" />
+      <TextField layoutX="341.0" layoutY="307.0" prefHeight="56.0" prefWidth="238.0" />
+      <Button layoutX="160.0" layoutY="467.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="121.0" text="取消" />
+      <Button layoutX="496.0" layoutY="467.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="121.0" text="确认" />
+   </children>
+</AnchorPane>

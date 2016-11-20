@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane alignment="CENTER" gridLinesVisible="true" layoutX="51.0" layoutY="69.0" prefHeight="425.0" prefWidth="498.0">
+         <children>
+            <Label text="客户名：" />
+            <Label text="订单号：" GridPane.rowIndex="1" />
+            <Label text="开始时间：" GridPane.rowIndex="3" />
+            <Label text="退房时间：" GridPane.rowIndex="4" />
+            <Label text="房间类型：" GridPane.rowIndex="5" />
+            <Label text="房间数量：" GridPane.rowIndex="6" />
+            <Label text="入住人数：" GridPane.rowIndex="7" />
+            <Label text="有无儿童：" GridPane.rowIndex="8" />
+            <Label text="总价值：" GridPane.rowIndex="9" />
+            <Label text="使用的促销策略：" GridPane.rowIndex="10" />
+            <Label alignment="CENTER" prefHeight="15.0" prefWidth="125.0" text="无" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+            <Label alignment="CENTER" prefWidth="50.0" text="200元" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <Label alignment="CENTER" prefWidth="50.0" text="有" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <Label alignment="CENTER" prefWidth="50.0" text="2" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label alignment="CENTER" prefHeight="15.0" prefWidth="50.0" text="1" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label alignment="CENTER" prefWidth="50.0" text="双人房" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label alignment="CENTER" prefWidth="50.0" text="000001" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label alignment="CENTER" prefWidth="50.0" text="jack" GridPane.columnIndex="1" />
+            <Label text="1月1日 12:00" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label text="1月1日 12:00" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label text="订单状态：" GridPane.rowIndex="2" />
+            <Label alignment="CENTER" prefHeight="19.0" prefWidth="50.0" text="未执行" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <Label layoutX="256.0" layoutY="28.0" text="订单详情">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="111.0" layoutY="520.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="关闭" AnchorPane.leftAnchor="111.0" AnchorPane.rightAnchor="389.0" />
+      <Button layoutX="408.0" layoutY="520.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="执行" AnchorPane.rightAnchor="111.0" />
+      <Button layoutX="250.0" layoutY="520.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="延迟入住" />
+   </children>
+</AnchorPane>

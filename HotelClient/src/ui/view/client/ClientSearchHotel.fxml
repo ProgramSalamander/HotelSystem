@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <SplitPane dividerPositions="0.39297658862876256" orientation="VERTICAL" prefHeight="600.0" prefWidth="750.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="202.0" prefWidth="748.0">
+               <children>
+                  <SplitPane dividerPositions="0.4959785522788204" layoutY="2.0" prefHeight="230.0" prefWidth="748.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="270.0">
+                           <children>
+                              <SplitPane prefHeight="56.0" prefWidth="367.0">
+                                 <items>
+                                    <AnchorPane prefHeight="54.0" prefWidth="360.0">
+                                       <children>
+                                          <Label layoutX="67.0" layoutY="20.0" text="所在地：" />
+                                          <SplitMenuButton alignment="CENTER" layoutX="193.0" layoutY="16.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="94.0" text="南京">
+                                            <items>
+                                              <MenuItem mnemonicParsing="false" text="嘉兴" />
+                                              <MenuItem mnemonicParsing="false" text="北京" />
+                                                <MenuItem mnemonicParsing="false" text="上海" />
+                                            </items>
+                                          </SplitMenuButton>
+                                          <ImageView fitHeight="36.0" fitWidth="35.0" layoutX="25.0" layoutY="9.0">
+                                             <image>
+                                                <Image url="@../所在地%20.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </AnchorPane>
+                                 </items>
+                              </SplitPane>
+                              <TabPane layoutY="56.0" prefHeight="171.0" prefWidth="367.0" tabClosingPolicy="UNAVAILABLE">
+                                <tabs>
+                                  <Tab text="酒店名称查找">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="150.0" prefWidth="367.0">
+                                             <children>
+                                                <Label layoutX="89.0" layoutY="63.0" text="名称：" />
+                                                <TextField layoutX="151.0" layoutY="60.0" />
+                                                <ImageView fitHeight="36.0" fitWidth="35.0" layoutX="26.0" layoutY="53.0">
+                                                   <image>
+                                                      <Image url="@../酒店名称.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </AnchorPane>
+                                    </content>
+                                  </Tab>
+                                  <Tab text="商圈查找">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <Label layoutX="98.0" layoutY="64.0" text="商圈：" />
+                                                <SplitMenuButton alignment="CENTER" layoutX="191.0" layoutY="60.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="94.0" text="新街口">
+                                                  <items>
+                                                    <MenuItem mnemonicParsing="false" text="Action 1" />
+                                                    <MenuItem mnemonicParsing="false" text="Action 2" />
+                                                  </items>
+                                                </SplitMenuButton>
+                                                <ImageView fitHeight="36.0" fitWidth="35.0" layoutX="27.0" layoutY="53.0">
+                                                   <image>
+                                                      <Image url="@../近商圈.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </AnchorPane>
+                                    </content>
+                                  </Tab>
+                                    <Tab text="房间类型查找">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <Label layoutX="92.0" layoutY="64.0" text="房间类型：" />
+                                                <SplitMenuButton alignment="CENTER" layoutX="192.0" layoutY="60.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="94.0" text="大床房">
+                                                  <items>
+                                                    <MenuItem mnemonicParsing="false" text="Action 1" />
+                                                    <MenuItem mnemonicParsing="false" text="Action 2" />
+                                                  </items>
+                                                </SplitMenuButton>
+                                                <ImageView fitHeight="45.0" fitWidth="42.0" layoutX="22.0" layoutY="50.0">
+                                                   <image>
+                                                      <Image url="@../房型.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                    </Tab>
+                                    <Tab text="星级查找">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <Label layoutX="102.0" layoutY="64.0" text="星级：" />
+                                                <SplitMenuButton alignment="CENTER" layoutX="191.0" layoutY="60.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="94.0" text="1星">
+                                                  <items>
+                                                    <MenuItem mnemonicParsing="false" text="Action 1" />
+                                                    <MenuItem mnemonicParsing="false" text="Action 2" />
+                                                  </items>
+                                                </SplitMenuButton>
+                                                <ImageView fitHeight="36.0" fitWidth="35.0" layoutX="29.0" layoutY="52.0">
+                                                   <image>
+                                                      <Image url="@../星级.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                    </Tab>
+                                    <Tab text="评分查找">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <Label layoutX="166.0" layoutY="20.0" text="评分区间：" />
+                                                <Label layoutX="184.0" layoutY="66.0" text="至" />
+                                                <SplitMenuButton layoutX="59.0" layoutY="62.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="94.0" text="4.0分">
+                                                  <items>
+                                                    <MenuItem mnemonicParsing="false" text="Action 1" />
+                                                    <MenuItem mnemonicParsing="false" text="Action 2" />
+                                                  </items>
+                                                </SplitMenuButton>
+                                                <SplitMenuButton layoutX="233.0" layoutY="62.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="94.0" text="5.0分">
+                                                   <items>
+                                                      <MenuItem mnemonicParsing="false" text="Action 1" />
+                                                      <MenuItem mnemonicParsing="false" text="Action 2" />
+                                                   </items>
+                                                </SplitMenuButton>
+                                                <ImageView fitHeight="36.0" fitWidth="35.0" layoutX="89.0" layoutY="10.0">
+                                                   <image>
+                                                      <Image url="@../评分.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                    </Tab>
+                                </tabs>
+                              </TabPane>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="215.0" prefWidth="373.0">
+                           <children>
+                              <Button mnemonicParsing="false" prefHeight="228.0" prefWidth="373.0">
+                                 <graphic>
+                                    <ImageView fitHeight="200.0" fitWidth="200.0">
+                                       <image>
+                                          <Image url="@../搜索.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="375.0" prefWidth="748.0">
+               <children>
+                  <TableView prefHeight="321.0" prefWidth="748.0">
+                    <columns>
+                      <TableColumn prefWidth="107.0" text="酒店名称" />
+                      <TableColumn minWidth="0.0" prefWidth="140.0" text="所属商圈" />
+                        <TableColumn minWidth="0.0" prefWidth="306.0" text="地址" />
+                        <TableColumn prefWidth="94.0" text="星级" />
+                        <TableColumn minWidth="7.0" prefWidth="100.0" text="评分" />
+                    </columns>
+                  </TableView>
+                  <Button layoutX="591.0" layoutY="323.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="155.0" text="预订房间" />
+                  <Button layoutX="403.0" layoutY="323.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="155.0" text="查看详细信息" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

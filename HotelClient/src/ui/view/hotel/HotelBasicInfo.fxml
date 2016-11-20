@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="700.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <GridPane layoutX="-1.0" layoutY="-2.0" prefHeight="600.0" prefWidth="700.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="548.0" minHeight="10.0" prefHeight="546.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="295.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="102.0" text="保存" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="550.0" />
+               </GridPane.margin>
+            </Button>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="345.0" minWidth="10.0" prefWidth="189.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="531.0" minWidth="10.0" prefWidth="511.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="85.0" minHeight="5.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="175.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="211.0" minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="118.0" minHeight="7.0" prefHeight="118.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label prefHeight="24.0" prefWidth="38.0" text="地址：" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                  <Label text="所属商圈：" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                  <Label text="简介：" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                  <Label text="设施服务：" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+                  <Label text="星级：" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+                  <ScrollPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                     <content>
+                        <TextArea prefHeight="83.0" prefWidth="509.0" text="&#10;" wrapText="true">
+                           <padding>
+                              <Insets top="2.0" />
+                           </padding>
+                        </TextArea>
+                     </content>
+                  </ScrollPane>
+                  <ScrollPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <content>
+                        <TextArea prefHeight="89.0" prefWidth="508.0" wrapText="true" />
+                     </content>
+                  </ScrollPane>
+                  <ScrollPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <content>
+                        <TextArea prefHeight="167.0" prefWidth="508.0" wrapText="true" />
+                     </content>
+                  </ScrollPane>
+                  <ScrollPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <content>
+                        <TextArea prefHeight="116.0" prefWidth="508.0" wrapText="true" />
+                     </content>
+                  </ScrollPane>
+                  <ScrollPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

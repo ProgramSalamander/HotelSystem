@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="750.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <TableView layoutY="34.0" prefHeight="566.0" prefWidth="750.0">
+         <columns>
+            <TableColumn prefWidth="107.0" text="酒店名称" />
+            <TableColumn minWidth="0.0" prefWidth="140.0" text="所属商圈" />
+            <TableColumn minWidth="0.0" prefWidth="306.0" text="地址" />
+            <TableColumn prefWidth="94.0" text="星级" />
+            <TableColumn minWidth="7.0" prefWidth="102.0" text="评分" />
+         </columns>
+      </TableView>
+      <Label layoutX="321.0" layoutY="4.0" text="历史酒店列表">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

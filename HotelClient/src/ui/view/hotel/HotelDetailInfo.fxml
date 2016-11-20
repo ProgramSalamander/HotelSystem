@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TitledPane alignment="CENTER" animated="false" collapsible="false" prefHeight="600.0" prefWidth="600.0" text="酒店详细信息">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="238.0" fitWidth="251.0">
+                     <image>
+                        <Image url="@../../../../resources/酒店.jpeg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="299.0" layoutY="25.0" text="酒店名称：" />
+                  <Label layoutX="443.0" layoutY="97.0" text="xxx" />
+                  <Label />
+                  <Label layoutX="311.0" layoutY="97.0" text="地址：" />
+                  <Label layoutX="443.0" layoutY="25.0" text="xxx" />
+                  <Label layoutX="299.0" layoutY="62.0" text="所属商圈：" />
+                  <Label layoutX="443.0" layoutY="62.0" text="xxx" />
+                  <Label layoutX="96.0" layoutY="252.0" text="简介：" />
+                  <Label layoutX="311.0" layoutY="134.0" text="星级：" />
+                  <Label layoutX="443.0" layoutY="134.0" text="xxx" />
+                  <Label layoutX="299.0" layoutY="172.0" text="平均评分：" />
+                  <Label layoutX="443.0" layoutY="172.0" text="xxx" />
+                  <Label alignment="TOP_LEFT" layoutX="206.0" layoutY="252.0" prefHeight="40.0" prefWidth="377.0" text="xxxxxxxxx" />
+                  <Label layoutX="98.0" layoutY="319.0" text="入住" />
+                  <Label layoutX="98.0" layoutY="371.0" text="离店" />
+                  <SplitMenuButton layoutX="126.0" layoutY="341.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="24.0" text="1">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Action 1" />
+                      <MenuItem mnemonicParsing="false" text="Action 2" />
+                    </items>
+                  </SplitMenuButton>
+                  <SplitMenuButton layoutX="48.0" layoutY="341.0" mnemonicParsing="false" text="1">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Action 1" />
+                      <MenuItem mnemonicParsing="false" text="Action 2" />
+                    </items>
+                  </SplitMenuButton>
+                  <SplitMenuButton layoutX="48.0" layoutY="393.0" mnemonicParsing="false" text="1">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Action 1" />
+                      <MenuItem mnemonicParsing="false" text="Action 2" />
+                    </items>
+                  </SplitMenuButton>
+                  <SplitMenuButton layoutX="126.0" layoutY="393.0" mnemonicParsing="false" text="3">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Action 1" />
+                      <MenuItem mnemonicParsing="false" text="Action 2" />
+                    </items>
+                  </SplitMenuButton>
+                  <Label layoutX="104.0" layoutY="397.0" text="月" />
+                  <Label layoutX="183.0" layoutY="397.0" text="日" />
+                  <Label layoutX="104.0" layoutY="345.0" text="月" />
+                  <Label layoutX="183.0" layoutY="345.0" text="日" />
+                  <Label layoutX="94.0" layoutY="441.0" text="共2晚" />
+                  <Button layoutX="407.0" layoutY="520.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="129.0" text="预定" AnchorPane.leftAnchor="383.0" AnchorPane.rightAnchor="114.0" />
+                  <Button layoutX="114.0" layoutY="520.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="120.0" text="关闭" AnchorPane.leftAnchor="114.0" AnchorPane.rightAnchor="383.20000000000005" />
+                  <Label layoutX="299.0" layoutY="213.0" text="设施服务：" />
+                  <Label layoutX="431.0" layoutY="213.0" text="xxxxxxx" />
+                  <Button layoutX="90.0" layoutY="468.0" mnemonicParsing="false">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="24.0">
+                           <image>
+                              <Image url="@../搜索.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <TabPane layoutX="205.0" layoutY="298.0" prefHeight="213.0" prefWidth="375.0" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                      <Tab text="房间列表">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ScrollPane prefHeight="183.0" prefWidth="375.0">
+                                      <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="181.0" prefWidth="373.0">
+                                             <children>
+                                                <TableView editable="true" layoutX="1.0" prefHeight="182.0" prefWidth="372.0">
+                                                   <columns>
+                                                      <TableColumn prefWidth="160.0" text="图片" />
+                                                      <TableColumn prefWidth="130.0" text="类型" />
+                                                      <TableColumn prefWidth="85.0" text="价格（元/间）" />
+                                                   </columns>
+                                                </TableView>
+                                             </children>
+                                          </AnchorPane>
+                                      </content>
+                                    </ScrollPane>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                      <Tab text="我的历史订单">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ScrollPane prefHeight="183.0" prefWidth="375.0">
+                                      <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="181.0" prefWidth="373.0">
+                                             <children>
+                                                <TableView prefHeight="186.0" prefWidth="376.0">
+                                                  <columns>
+                                                    <TableColumn prefWidth="97.0" text="订单号" />
+                                                    <TableColumn prefWidth="73.0" text="房间类型" />
+                                                      <TableColumn prefWidth="55.0" text="房间数量" />
+                                                      <TableColumn prefWidth="48.0" text="总价值" />
+                                                      <TableColumn prefWidth="99.0" text="订单状态" />
+                                                  </columns>
+                                                </TableView>
+                                             </children>
+                                          </AnchorPane>
+                                      </content>
+                                    </ScrollPane>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                    </tabs>
+                  </TabPane>
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+   </children>
+</AnchorPane>

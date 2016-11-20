@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <SplitPane dividerPositions="0.1843687374749499" prefHeight="600.0" prefWidth="1000.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <SplitPane prefHeight="199.0" prefWidth="181.0">
+                     <items>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="54.0" layoutY="14.0" text="管理员，您好" />
+                              <Label layoutX="12.0" layoutY="71.0" text="已注册客户数：" />
+                              <Label layoutX="12.0" layoutY="114.0" text="已加盟酒店数：" />
+                              <Label layoutX="18.0" layoutY="155.0" text="累计订单量：" />
+                              <Label layoutX="144.0" layoutY="71.0" text="0" />
+                              <Label layoutX="144.0" layoutY="114.0" text="0" />
+                              <Label layoutX="144.0" layoutY="155.0" text="0" />
+                              <Label layoutX="18.0" layoutY="35.0" text="截止至" />
+                              <Label layoutX="70.0" layoutY="35.0" text="2016/10/23 0:00" />
+                           </children>
+                        </AnchorPane>
+                     </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TabPane prefHeight="598.0" prefWidth="537.0" style="-fx-border-color: #C0C0C0;" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                      <Tab text="客户人员管理">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="219.0" prefWidth="287.0">
+                                 <children>
+                                    <SplitPane dividerPositions="0.7720848056537103" layoutX="-3.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="568.0" prefWidth="537.0">
+                                      <items>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                             <children>
+                                                <TableView prefHeight="434.0" prefWidth="537.0">
+                                                  <columns>
+                                                    <TableColumn prefWidth="123.0" text="姓名" />
+                                                      <TableColumn prefWidth="143.0" text="手机号" />
+                                                    <TableColumn prefWidth="181.0" text="会员信息" />
+                                                      <TableColumn prefWidth="88.0" text="信用值" />
+                                                  </columns>
+                                                </TableView>
+                                             </children>
+                                          </AnchorPane>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="222.0" prefWidth="529.0">
+                                             <children>
+                                                <Button layoutX="123.0" layoutY="52.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="110.0" text="添加" />
+                                                <Button layoutX="255.0" layoutY="52.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="110.0" text="删除" />
+                                                <Button layoutX="390.0" layoutY="52.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="110.0" text="修改" />
+                                             </children>
+                                          </AnchorPane>
+                                      </items>
+                                    </SplitPane>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                        <Tab text="酒店管理">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="219.0" prefWidth="287.0">
+                                 <children>
+                                    <SplitPane dividerPositions="0.7720848056537103" layoutX="-3.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="568.0" prefWidth="537.0">
+                                       <items>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                             <children>
+                                                <TableView prefHeight="434.0" prefWidth="537.0">
+                                                   <columns>
+                                                      <TableColumn prefWidth="126.0" text="酒店名" />
+                                                      <TableColumn prefWidth="149.0" text="地址" />
+                                                      <TableColumn prefWidth="118.0" text="所属商圈" />
+                                                      <TableColumn prefWidth="65.0" text="星级" />
+                                                      <TableColumn prefWidth="76.0" text="平均评分" />
+                                                   </columns>
+                                                </TableView>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="222.0" prefWidth="529.0">
+                                             <children>
+                                                <Button layoutX="123.0" layoutY="52.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="110.0" text="添加" />
+                                                <Button layoutX="255.0" layoutY="52.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="110.0" text="删除" />
+                                                <Button layoutX="390.0" layoutY="52.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="110.0" text="修改" />
+                                             </children>
+                                          </AnchorPane>
+                                       </items>
+                                    </SplitPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                      <Tab text="酒店工作人员管理">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="219.0" prefWidth="287.0">
+                                 <children>
+                                    <SplitPane dividerPositions="0.7720848056537103" layoutX="-3.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="568.0" prefWidth="537.0">
+                                       <items>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                             <children>
+                                                <TableView prefHeight="434.0" prefWidth="537.0">
+                                                   <columns>
+                                                      <TableColumn prefWidth="169.0" text="姓名" />
+                                                      <TableColumn prefWidth="201.0" text="所属酒店" />
+                                                      <TableColumn prefWidth="166.0" text="手机号" />
+                                                   </columns>
+                                                </TableView>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="222.0" prefWidth="529.0">
+                                             <children>
+                                                <Button layoutX="123.0" layoutY="52.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="110.0" text="添加" />
+                                                <Button layoutX="255.0" layoutY="52.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="110.0" text="删除" />
+                                                <Button layoutX="390.0" layoutY="52.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="110.0" text="修改" />
+                                             </children>
+                                          </AnchorPane>
+                                       </items>
+                                    </SplitPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                      </Tab>
+                        <Tab text="网站营销人员管理">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="219.0" prefWidth="287.0">
+                                 <children>
+                                    <SplitPane dividerPositions="0.7720848056537103" layoutX="-3.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="568.0" prefWidth="537.0">
+                                       <items>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                             <children>
+                                                <TableView prefHeight="434.0" prefWidth="537.0">
+                                                   <columns>
+                                                      <TableColumn prefWidth="256.0" text="姓名" />
+                                                      <TableColumn prefWidth="280.0" text="手机号" />
+                                                   </columns>
+                                                </TableView>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="222.0" prefWidth="529.0">
+                                             <children>
+                                                <Button layoutX="123.0" layoutY="52.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="110.0" text="添加" />
+                                                <Button layoutX="255.0" layoutY="52.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="110.0" text="删除" />
+                                                <Button layoutX="390.0" layoutY="52.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="110.0" text="修改" />
+                                             </children>
+                                          </AnchorPane>
+                                       </items>
+                                    </SplitPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                    </tabs>
+                  </TabPane>
+                  <TextField layoutX="636.0" layoutY="15.0" />
+                  <Button layoutX="549.0" layoutY="14.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="8.0">
+                     <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="16.0">
+                           <image>
+                              <Image url="@../搜索.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label layoutX="592.0" layoutY="19.0" text="姓名" />
+                  <ImageView fitHeight="220.0" fitWidth="394.0" layoutX="490.0" layoutY="378.0">
+                     <image>
+                        <Image url="@../../../../resources/管理.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

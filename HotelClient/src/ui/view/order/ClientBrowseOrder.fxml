@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ScrollPane prefHeight="605.0" prefWidth="770.0">
+         <content>
+            <TableView editable="true" prefHeight="596.0" prefWidth="1028.0">
+               <columns>
+                  <TableColumn prefWidth="85.0" text="编号" />
+                  <TableColumn prefWidth="94.0" text="酒店" />
+                  <TableColumn prefWidth="66.0" text="状态" />
+                  <TableColumn prefWidth="140.0" text="开始时间" />
+                  <TableColumn prefWidth="140.0" text="退房时间" />
+                  <TableColumn prefWidth="70.0" text="房间类型" />
+                  <TableColumn prefWidth="72.0" text="房间数量" />
+                  <TableColumn prefWidth="130.0" text="使用的促销策略" />
+                  <TableColumn prefWidth="85.0" text="总价值（元）" />
+                  <TableColumn prefWidth="75.0" text="入住人数" />
+                  <TableColumn prefWidth="70.0" resizable="false" text="有无儿童" />
+               </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

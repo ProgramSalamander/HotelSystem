@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane layoutX="-1.0" layoutY="-1.0" prefHeight="600.0" prefWidth="1000.0" AnchorPane.leftAnchor="1.0" AnchorPane.topAnchor="1.0">
+         <children>
+            <GridPane prefHeight="600.0" prefWidth="265.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="250.0" GridPane.rowIndex="1">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="46.0" prefWidth="252.0" style="-fx-border-color: #000000;" text="网站营销" />
+                        <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="254.0" text="网站促销策略制定" />
+                        <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="254.0" text="异常订单浏览" />
+                        <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="256.0" text="信用充值" />
+                     </children>
+                  </VBox>
+                  <GridPane gridLinesVisible="true">
+                     <children>
+                        <GridPane prefHeight="132.0" prefWidth="237.0" GridPane.rowIndex="1">
+                           <children>
+                              <Label text="营销人员姓名：" GridPane.halignment="CENTER">
+                                 <GridPane.margin>
+                                    <Insets />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label text="联系方式：" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label text="Tom" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                              <Label text="88888888" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="69.0" minHeight="10.0" prefHeight="69.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="86.0" minHeight="10.0" prefHeight="63.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <Label alignment="CENTER" prefHeight="15.0" prefWidth="226.0" text="当前用户信息" />
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="89.0" minHeight="10.0" prefHeight="39.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="149.0" minHeight="10.0" prefHeight="149.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="496.0" minWidth="10.0" prefWidth="214.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="270.0" minHeight="10.0" prefHeight="190.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="476.0" minHeight="10.0" prefHeight="231.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="446.0" minHeight="10.0" prefHeight="225.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <GridPane prefHeight="600.0" prefWidth="708.0" GridPane.columnIndex="1">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="200.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="600.0" minHeight="10.0" prefHeight="600.0" />
+               </rowConstraints>
+               <children>
+                  <AnchorPane prefHeight="600.0" prefWidth="750.0" visible="false">
+                     <children>
+                        <SplitPane dividerPositions="0.6438127090301003" layoutY="-1.0" orientation="VERTICAL" prefHeight="600.0" prefWidth="750.0">
+                          <items>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                 <children>
+                                    <TitledPane alignment="CENTER" animated="false" collapsible="false" prefHeight="382.0" prefWidth="748.0" text="促销策略列表">
+                                       <content>
+                                          <TableView prefHeight="200.0" prefWidth="200.0">
+                                            <columns>
+                                              <TableColumn prefWidth="118.0" text="名称" />
+                                                <TableColumn prefWidth="196.0" text="起始时间" />
+                                                <TableColumn prefWidth="185.0" text="结束时间" />
+                                                <TableColumn prefWidth="90.0" text="折扣(%)" />
+                                                <TableColumn prefWidth="157.0" text="使用条件" />
+                                            </columns>
+                                          </TableView>
+                                       </content>
+                                    </TitledPane>
+                                 </children>
+                              </AnchorPane>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                 <children>
+                                    <TabPane prefHeight="210.0" prefWidth="748.0" tabClosingPolicy="UNAVAILABLE">
+                                      <tabs>
+                                        <Tab text="添加促销策略">
+                                          <content>
+                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                   <children>
+                                                      <GridPane prefHeight="181.0" prefWidth="748.0">
+                                                        <columnConstraints>
+                                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                        </columnConstraints>
+                                                        <rowConstraints>
+                                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                        </rowConstraints>
+                                                         <children>
+                                                            <Label text="名称：" />
+                                                            <Label text="结束时间：" GridPane.rowIndex="1" />
+                                                            <Label text="促销折扣：" GridPane.rowIndex="2" />
+                                                            <Label text="起始时间：" GridPane.columnIndex="2" />
+                                                            <Label text="使用条件：" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                                            <Button mnemonicParsing="false" prefHeight="36.0" prefWidth="122.0" text="确认" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                                               <GridPane.margin>
+                                                                  <Insets left="-190.0" />
+                                                               </GridPane.margin>
+                                                            </Button>
+                                                            <TextField GridPane.columnIndex="1" />
+                                                            <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                            <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                            <TextField GridPane.columnIndex="3" />
+                                                            <TextField GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                                         </children>
+                                                      </GridPane>
+                                                   </children>
+                                                </AnchorPane>
+                                          </content>
+                                        </Tab>
+                                        <Tab text="修改促销策略">
+                                          <content>
+                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                   <children>
+                                                      <GridPane prefHeight="181.0" prefWidth="748.0">
+                                                         <children>
+                                                            <Label text="名称：" />
+                                                            <Label text="结束时间：" GridPane.rowIndex="1" />
+                                                            <Label text="促销折扣：" GridPane.rowIndex="2" />
+                                                            <Label text="起始时间：" GridPane.columnIndex="2" />
+                                                            <Label text="使用条件：" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                                            <Button mnemonicParsing="false" prefHeight="36.0" prefWidth="122.0" text="确认" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                                               <GridPane.margin>
+                                                                  <Insets left="-190.0" />
+                                                               </GridPane.margin>
+                                                            </Button>
+                                                            <TextField GridPane.columnIndex="1" />
+                                                            <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                            <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                            <TextField GridPane.columnIndex="3" />
+                                                            <TextField GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                                            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="18.0" prefWidth="14.0">
+                                                               <graphic>
+                                                                  <ImageView fitHeight="19.0" fitWidth="19.0">
+                                                                     <image>
+                                                                        <Image url="@../搜索.png" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                               </graphic>
+                                                               <GridPane.margin>
+                                                                  <Insets left="120.0" />
+                                                               </GridPane.margin>
+                                                            </Button>
+                                                         </children>
+                                                         <columnConstraints>
+                                                            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                         </columnConstraints>
+                                                         <rowConstraints>
+                                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                         </rowConstraints>
+                                                      </GridPane>
+                                                   </children>
+                                                </AnchorPane>
+                                          </content>
+                                        </Tab>
+                                          <Tab text="删除促销策略">
+                                             <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                   <children>
+                                                      <GridPane prefHeight="181.0" prefWidth="748.0">
+                                                         <children>
+                                                            <Label text="名称：" />
+                                                            <Label text="结束时间：" GridPane.rowIndex="1" />
+                                                            <Label text="促销折扣：" GridPane.rowIndex="2" />
+                                                            <Label text="起始时间：" GridPane.columnIndex="2" />
+                                                            <Label text="使用条件：" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                                            <Button mnemonicParsing="false" prefHeight="36.0" prefWidth="122.0" text="确认" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                                               <GridPane.margin>
+                                                                  <Insets left="-190.0" />
+                                                               </GridPane.margin>
+                                                            </Button>
+                                                            <TextField GridPane.columnIndex="1" />
+                                                            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="18.0" prefWidth="14.0">
+                                                               <graphic>
+                                                                  <ImageView fitHeight="19.0" fitWidth="19.0">
+                                                                     <image>
+                                                                        <Image url="@../搜索.png" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                               </graphic>
+                                                               <GridPane.margin>
+                                                                  <Insets left="120.0" />
+                                                               </GridPane.margin>
+                                                            </Button>
+                                                            <Label text="Label" GridPane.columnIndex="3" />
+                                                            <Label text="Label" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                                            <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                            <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                         </children>
+                                                         <columnConstraints>
+                                                            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                         </columnConstraints>
+                                                         <rowConstraints>
+                                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                         </rowConstraints>
+                                                      </GridPane>
+                                                   </children>
+                                                </AnchorPane>
+                                             </content>
+                                          </Tab>
+                                      </tabs>
+                                    </TabPane>
+                                 </children>
+                              </AnchorPane>
+                          </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="600.0" prefWidth="750.0" visible="false">
+                     <children>
+                        <SplitPane dividerPositions="0.8712374581939799" orientation="VERTICAL" prefHeight="600.0" prefWidth="750.0">
+                          <items>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                 <children>
+                                    <TitledPane alignment="CENTER" animated="false" collapsible="false" prefHeight="600.0" prefWidth="750.0" text="每日未执行订单列表">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <ScrollPane prefHeight="579.0" prefWidth="760.0">
+                                                   <content>
+                                                      <TableView editable="true" prefHeight="600.0" prefWidth="746.0">
+                                                         <columns>
+                                                            <TableColumn prefWidth="89.0" text="订单号" />
+                                                            <TableColumn prefWidth="130.0" text="酒店" />
+                                                            <TableColumn prefWidth="203.0" text="最晚执行时间" />
+                                                            <TableColumn prefWidth="205.0" text="超过最晚执行时间" />
+                                                            <TableColumn prefWidth="117.0" text="扣除信用值" />
+                                                         </columns>
+                                                      </TableView>
+                                                   </content>
+                                                </ScrollPane>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                    </TitledPane>
+                                 </children>
+                              </AnchorPane>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                 <children>
+                                    <Button layoutX="519.0" layoutY="15.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="142.0" text="撤销异常订单" />
+                                    <Label layoutX="269.0" layoutY="30.0" text="恢复信用值选项：" />
+                                    <SplitMenuButton layoutX="374.0" layoutY="26.0" mnemonicParsing="false" text="全部信用值">
+                                      <items>
+                                        <MenuItem mnemonicParsing="false" text="全部信用值" />
+                                          <MenuItem mnemonicParsing="false" text="一半信用值" />
+                                      </items>
+                                    </SplitMenuButton>
+                                 </children>
+                              </AnchorPane>
+                          </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="600.0" prefWidth="750.0" visible="false">
+                     <children>
+                        <GridPane layoutX="92.0" layoutY="39.0" prefHeight="106.0" prefWidth="246.0">
+                          <columnConstraints>
+                            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="118.0" minWidth="10.0" prefWidth="86.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="160.0" minWidth="10.0" prefWidth="160.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label text="增加信用值：" GridPane.rowIndex="1" />
+                              <Label text="客户名：" />
+                              <TextField GridPane.columnIndex="1" />
+                              <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                           </children>
+                        </GridPane>
+                        <TitledPane alignment="CENTER" animated="false" collapsible="false" layoutX="51.0" layoutY="170.0" prefHeight="279.0" prefWidth="390.0" text="客户信息">
+                           <content>
+                              <GridPane>
+                                <columnConstraints>
+                                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="179.0" minWidth="10.0" prefWidth="99.0" />
+                                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="269.0" minWidth="10.0" prefWidth="269.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Label text="姓名：" />
+                                    <Label text="手机号：" GridPane.rowIndex="1" />
+                                    <Label text="会员类型：" GridPane.rowIndex="2" />
+                                    <Label text="当前信用值：" GridPane.rowIndex="3" />
+                                 </children>
+                              </GridPane>
+                           </content>
+                        </TitledPane>
+                        <Button layoutX="358.0" layoutY="51.0" mnemonicParsing="false">
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="22.0">
+                                 <image>
+                                    <Image url="@../搜索.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button layoutX="192.0" layoutY="485.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="108.0" text="确认充值" />
+                        <ImageView fitHeight="279.0" fitWidth="288.0" layoutX="458.0" layoutY="170.0">
+                           <image>
+                              <Image url="@../../../../resources/timg.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </GridPane>
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="495.0" minWidth="10.0" prefWidth="250.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="793.0" minWidth="10.0" prefWidth="750.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="747.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <SplitPane layoutY="300.0" prefHeight="300.0" prefWidth="375.0" AnchorPane.topAnchor="300.0">
+         <items>
+            <TitledPane alignment="CENTER" collapsible="false" prefHeight="315.0" prefWidth="348.0" text="会员信息">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Label alignment="CENTER" layoutX="43.0" layoutY="78.0" prefHeight="16.0" prefWidth="86.0" text="会员类型：" />
+                        <Label layoutX="212.0" layoutY="79.0" text="普通" />
+                        <Label layoutX="68.0" layoutY="169.0" text="生日：" />
+                        <Label layoutX="197.0" layoutY="169.0" text="1999/9/9" />
+                        <Label alignment="CENTER" layoutX="43.0" layoutY="121.0" prefHeight="16.0" prefWidth="86.0" text="会员ID：" />
+                        <Label layoutX="199.0" layoutY="122.0" text="0000001" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </TitledPane>
+         </items>
+      </SplitPane>
+      <SplitPane layoutX="374.0" layoutY="300.0" prefHeight="300.0" prefWidth="372.0" AnchorPane.topAnchor="300.0">
+         <items>
+            <TitledPane alignment="CENTER" collapsible="false" prefHeight="298.0" prefWidth="200.0" text="信用值信息">
+               <content>
+                  <SplitPane dividerPositions="0.3284671532846715" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+                     <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="26.0" prefWidth="346.0">
+                           <children>
+                              <Label layoutX="46.0" layoutY="38.0" text="当前信用值：" />
+                              <Label layoutX="246.0" layoutY="38.0" text="300" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="300.0">
+                           <children>
+                              <Accordion>
+                                 <panes>
+                                    <TitledPane alignment="CENTER" animated="false" collapsible="false" prefHeight="23.0" prefWidth="373.0" text="信用记录">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                       </content>
+                                    </TitledPane>
+                                 </panes>
+                              </Accordion>
+                              <TableView layoutY="23.0" prefHeight="159.0" prefWidth="373.0">
+                                 <columns>
+                                    <TableColumn prefWidth="75.0" text="时间" />
+                                    <TableColumn prefWidth="188.0" text="信用变化及原因" />
+                                    <TableColumn prefWidth="84.0" text="变化后信用值" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </items>
+                  </SplitPane>
+               </content>
+            </TitledPane>
+         </items>
+      </SplitPane>
+      <SplitPane prefHeight="300.0" prefWidth="700.0">
+         <items>
+            <TitledPane alignment="CENTER" collapsible="false" prefHeight="328.0" prefWidth="698.0" text="基本信息">
+               <content>
+                  <AnchorPane prefHeight="274.0" prefWidth="743.0">
+                     <children>
+                        <Label layoutX="147.0" layoutY="53.0" text="姓名：" />
+                        <Label layoutX="141.0" layoutY="137.0" text="手机号：" />
+                        <TextField layoutX="374.0" layoutY="49.0" text="jack" />
+                        <TextField layoutX="374.0" layoutY="141.0" text="88888888" />
+                        <Button layoutX="316.0" layoutY="209.0" mnemonicParsing="false" text="确认更改" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </TitledPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

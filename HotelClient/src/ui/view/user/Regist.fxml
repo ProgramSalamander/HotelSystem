@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="400.0" maxWidth="500.0" minHeight="400.0" minWidth="500.0" prefHeight="400.0" prefWidth="500.0" stylesheets="@Regist.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.view.user.RegistController">
+   <children>
+      <TextField layoutX="250.0" layoutY="119.0" prefHeight="31.0" prefWidth="178.0" />
+      <Label layoutX="107.0" layoutY="119.0" prefHeight="31.0" prefWidth="56.0" text="账号" textFill="SNOW">
+         <font>
+            <Font name="Microsoft JhengHei" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="107.0" layoutY="191.0" prefHeight="31.0" prefWidth="56.0" text="密码" textFill="SNOW">
+         <font>
+            <Font name="Microsoft JhengHei" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="89.0" layoutY="261.0" prefHeight="31.0" prefWidth="93.0" text="确认密码" textFill="SNOW">
+         <font>
+            <Font name="Microsoft JhengHei" size="22.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="216.0" layoutY="43.0" prefHeight="38.0" prefWidth="69.0" text="注册" textFill="SNOW">
+         <font>
+            <Font name="Microsoft JhengHei Bold" size="29.0" />
+         </font>
+      </Label>
+      <Button layoutX="88.0" layoutY="325.0" mnemonicParsing="false" onAction="#cancelRegist" prefHeight="40.0" prefWidth="92.0" text="取消" />
+      <Button layoutX="330.0" layoutY="325.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="92.0" text="注册" />
+      <PasswordField layoutX="250.0" layoutY="185.0" prefHeight="31.0" prefWidth="178.0" />
+      <PasswordField layoutX="250.0" layoutY="246.0" prefHeight="31.0" prefWidth="178.0" />
+   </children>
+</AnchorPane>

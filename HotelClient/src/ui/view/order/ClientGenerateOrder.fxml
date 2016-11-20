@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane layoutX="24.0" layoutY="52.0" prefHeight="439.0" prefWidth="552.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="酒店名：" />
+            <Label text="xxx" GridPane.columnIndex="1" />
+            <Label text="开始时间：" GridPane.rowIndex="1" />
+            <Label text="结束时间：" GridPane.rowIndex="2" />
+            <Label text="最晚订单执行时间：" GridPane.rowIndex="3" />
+            <Label text="房间类型：" GridPane.rowIndex="4" />
+            <Label text="房间数量：" GridPane.rowIndex="5" />
+            <Label text="预计入住人数：" GridPane.rowIndex="6" />
+            <Label text="有无儿童：" GridPane.rowIndex="7" />
+            <Label text="总价值：" GridPane.rowIndex="8" />
+            <Label text="使用的促销策略：" GridPane.rowIndex="9" />
+            <SplitMenuButton mnemonicParsing="false" prefHeight="23.0" prefWidth="67.0" GridPane.columnIndex="1" GridPane.rowIndex="9">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Action 1" />
+                  <MenuItem mnemonicParsing="false" text="Action 2" />
+               </items>
+            </SplitMenuButton>
+            <SplitMenuButton mnemonicParsing="false" prefHeight="23.0" prefWidth="67.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+            </SplitMenuButton>
+            <Label text="xxx元" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <TextField prefHeight="23.0" prefWidth="67.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField prefHeight="23.0" prefWidth="67.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <SplitMenuButton mnemonicParsing="false" prefHeight="23.0" prefWidth="84.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Action 1" />
+                  <MenuItem mnemonicParsing="false" text="Action 2" />
+               </items>
+            </SplitMenuButton>
+            <AnchorPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <Label layoutX="63.0" layoutY="4.0" text="月" />
+                  <SplitMenuButton layoutX="87.0" mnemonicParsing="false" text="1">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Action 1" />
+                        <MenuItem mnemonicParsing="false" text="Action 2" />
+                     </items>
+                  </SplitMenuButton>
+                  <SplitMenuButton layoutX="175.0" mnemonicParsing="false" text="12:00">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Action 1" />
+                        <MenuItem mnemonicParsing="false" text="Action 2" />
+                     </items>
+                  </SplitMenuButton>
+                  <SplitMenuButton mnemonicParsing="false" text="1">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Action 1" />
+                      <MenuItem mnemonicParsing="false" text="Action 2" />
+                    </items>
+                  </SplitMenuButton>
+                  <Label layoutX="148.0" layoutY="4.0" text="日" />
+               </children>
+            </AnchorPane>
+            <AnchorPane GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <Label layoutX="63.0" layoutY="4.0" text="月" />
+                  <SplitMenuButton layoutX="87.0" mnemonicParsing="false" text="3">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Action 1" />
+                        <MenuItem mnemonicParsing="false" text="Action 2" />
+                     </items>
+                  </SplitMenuButton>
+                  <SplitMenuButton layoutX="175.0" mnemonicParsing="false" text="12:00">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Action 1" />
+                        <MenuItem mnemonicParsing="false" text="Action 2" />
+                     </items>
+                  </SplitMenuButton>
+                  <SplitMenuButton mnemonicParsing="false" text="1">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Action 1" />
+                        <MenuItem mnemonicParsing="false" text="Action 2" />
+                     </items>
+                  </SplitMenuButton>
+                  <Label layoutX="148.0" layoutY="4.0" text="日" />
+               </children>
+            </AnchorPane>
+            <AnchorPane GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <children>
+                  <Label layoutX="63.0" layoutY="4.0" text="月" />
+                  <SplitMenuButton layoutX="87.0" mnemonicParsing="false" text="1">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Action 1" />
+                        <MenuItem mnemonicParsing="false" text="Action 2" />
+                     </items>
+                  </SplitMenuButton>
+                  <SplitMenuButton layoutX="175.0" mnemonicParsing="false" text="12:00">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Action 1" />
+                        <MenuItem mnemonicParsing="false" text="Action 2" />
+                     </items>
+                  </SplitMenuButton>
+                  <SplitMenuButton mnemonicParsing="false" text="1">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Action 1" />
+                        <MenuItem mnemonicParsing="false" text="Action 2" />
+                     </items>
+                  </SplitMenuButton>
+                  <Label layoutX="148.0" layoutY="4.0" text="日" />
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+      <Label layoutX="256.0" layoutY="14.0" text="您的订单">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="394.0" layoutY="502.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="确认" />
+      <Button layoutX="92.0" layoutY="502.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="取消" />
+   </children>
+</AnchorPane>

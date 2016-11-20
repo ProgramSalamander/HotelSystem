@@ -1,0 +1,7 @@
+.root{
+	-fx-background-size: stretch stretch;
+    -fx-background-position: center center;
+}
+.label{
+	-fx-text-fill: black;
+}

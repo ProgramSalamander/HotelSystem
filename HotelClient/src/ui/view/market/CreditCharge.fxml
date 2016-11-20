@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane layoutX="92.0" layoutY="39.0" prefHeight="106.0" prefWidth="246.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="118.0" minWidth="10.0" prefWidth="86.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="160.0" minWidth="10.0" prefWidth="160.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="增加信用值：" GridPane.rowIndex="1" />
+            <Label text="客户名：" />
+            <TextField GridPane.columnIndex="1" />
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <TitledPane alignment="CENTER" animated="false" collapsible="false" layoutX="51.0" layoutY="170.0" prefHeight="279.0" prefWidth="390.0" text="客户信息">
+         <content>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="179.0" minWidth="10.0" prefWidth="99.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="269.0" minWidth="10.0" prefWidth="269.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="姓名：" />
+                  <Label text="手机号：" GridPane.rowIndex="1" />
+                  <Label text="会员类型：" GridPane.rowIndex="2" />
+                  <Label text="当前信用值：" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+         </content>
+      </TitledPane>
+      <Button layoutX="358.0" layoutY="51.0" mnemonicParsing="false">
+         <graphic>
+            <ImageView fitHeight="23.0" fitWidth="22.0">
+               <image>
+                  <Image url="@../搜索.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="192.0" layoutY="485.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="108.0" text="确认充值" />
+      <ImageView fitHeight="279.0" fitWidth="288.0" layoutX="458.0" layoutY="170.0">
+         <image>
+            <Image url="@../../../../resources/timg.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

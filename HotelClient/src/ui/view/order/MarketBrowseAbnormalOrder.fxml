@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <SplitPane dividerPositions="0.8712374581939799" orientation="VERTICAL" prefHeight="600.0" prefWidth="750.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TitledPane alignment="CENTER" animated="false" collapsible="false" prefHeight="600.0" prefWidth="750.0" text="每日未执行订单列表">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <ScrollPane prefHeight="579.0" prefWidth="760.0">
+                                 <content>
+                                    <TableView editable="true" prefHeight="600.0" prefWidth="746.0">
+                                       <columns>
+                                          <TableColumn prefWidth="89.0" text="订单号" />
+                                          <TableColumn prefWidth="130.0" text="酒店" />
+                                          <TableColumn prefWidth="203.0" text="最晚执行时间" />
+                                          <TableColumn prefWidth="205.0" text="超过最晚执行时间" />
+                                          <TableColumn prefWidth="117.0" text="扣除信用值" />
+                                       </columns>
+                                    </TableView>
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </TitledPane>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Button layoutX="519.0" layoutY="15.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="142.0" text="撤销异常订单" />
+                  <Label layoutX="269.0" layoutY="30.0" text="恢复信用值选项：" />
+                  <SplitMenuButton layoutX="374.0" layoutY="26.0" mnemonicParsing="false" text="全部信用值">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="全部信用值" />
+                        <MenuItem mnemonicParsing="false" text="一半信用值" />
+                    </items>
+                  </SplitMenuButton>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
